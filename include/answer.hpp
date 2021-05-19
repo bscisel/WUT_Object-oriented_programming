@@ -5,12 +5,12 @@
 
 class Answer
 {
-private:
+protected:
     std::string text;
 
 public:
     Answer(const std::string &text) : text(text){};
-    std::string get_text() { return text; };
+    std::string get_text() const { return text; };
 };
 
 class Correct_answer : public Answer
