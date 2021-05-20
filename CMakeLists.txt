@@ -9,5 +9,6 @@ find_package(GTest REQUIRED)
 add_executable(main source/main.cpp source/question.cpp)
 target_include_directories(main PRIVATE include)
 
-add_executable(gtest ${CMAKE_SOURCE_DIR}/tests/gtest.cpp)
+add_executable(gtest tests/main.cpp tests/answer.cpp tests/question.cpp source/question.cpp)
+target_include_directories(gtest PRIVATE include)
 target_link_libraries(gtest GTest::GTest GTest::Main)

@@ -4,14 +4,13 @@
 #include <string>
 #include <type_traits>
 
-template<typename Base, typename T>
-inline bool instanceof(const T) {
-   return std::is_base_of<Base, T>::value;
-}
 
 int main(){
-    Correct_answer a("CORRECT");
-    Wrong_answer b("WRONG");
-    if(instanceof<Correct_answer>(b))
-        std::cout << "TAK" << std::endl;
+    Question question1(1, 3, "Question?");
+    question1.add_answer("Odpowiedz A", true);
+    question1.add_answer("Odpowiedz B", false);
+    question1.add_answer("Odpowiedz C", false);
+    question1.add_answer("Odpowiedz D", true);
+    const std::vector<Answer *> user_answers = question1.get_answers();
+    std::cout << static_cast<int>(user_answers[0]->is_correct()) << std::endl;
 }
