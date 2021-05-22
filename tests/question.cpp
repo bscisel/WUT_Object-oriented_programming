@@ -4,20 +4,17 @@
 
 TEST(question, create_question)
 {
-    Question question1(1, 3, "Question?");
+    Question question1(3, "Question?");
     EXPECT_EQ(question1.get_points(), 3);
     EXPECT_NE(question1.get_points(), 5);
-    EXPECT_EQ(question1.get_category_id(), 1);
-    EXPECT_NE(question1.get_category_id(), 2);
     EXPECT_EQ(question1.get_text(), "Question?");
     EXPECT_EQ(question1.get_number_answers(), 0);
 }
 
 TEST(question, question_add_answer)
 {
-    Question question1(1, 3, "Question?");
+    Question question1(3, "Question?");
     EXPECT_EQ(question1.get_points(), 3);
-    EXPECT_EQ(question1.get_category_id(), 1);
     EXPECT_EQ(question1.get_text(), "Question?");
     EXPECT_EQ(question1.get_number_answers(), 0);
     question1.add_answer("Odpowiedz A", true);
@@ -30,4 +27,22 @@ TEST(question, question_add_answer)
     EXPECT_FALSE(user_answers[1]->is_correct());
     EXPECT_FALSE(user_answers[2]->is_correct());
     EXPECT_TRUE(user_answers[3]->is_correct());
+}
+
+TEST(question, answered_question)
+{
+    Question question1(3, "Question?");
+    question1.add_answer("Odpowiedz A", true);
+    question1.add_answer("Odpowiedz B", false);
+    question1.add_answer("Odpowiedz C", false);
+    question1.add_answer("Odpowiedz D", true);
+    const std::vector<Answer *> answers = question1.get_answers();
+    std::vector<Answer *> user_answers;
+    user_answers.push_back(answers[0]);
+    user_answers.push_back(answers[2]);
+    Answered_question a_question1(question1, 5.1, user_answers);
+    EXPECT_EQ(a_question1.get_time(), 5.1);
+    EXPECT_EQ(a_question1.get_time(), 5.1);
+    EXPECT_EQ(a_question1.get_number_answers(), question1.get_number_answers());
+    EXPECT_EQ(a_question1.get_number_user_answers(), 2);
 }
