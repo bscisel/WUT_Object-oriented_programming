@@ -2,6 +2,7 @@
 #define QUESTION_HPP
 
 #include <vector>
+#include <chrono>
 #include "answer.hpp"
 
 class Question
@@ -23,15 +24,15 @@ public:
 class Answered_question : public Question
 {
 private:
-    double time;
+    uint64_t time;
     std::vector<Answer *> user_answers;
 
 public:
-    Answered_question(Question question, double time,
-                      std::vector<Answer *> user_answers) : Question(question),
-                                                            time(time), user_answers(user_answers) {}
-    const std::vector<Answer *> &get_answers() { return user_answers; }
-    double get_time() { return time; }
+    Answered_question(Question question, uint64_t time,
+                      std::vector<Answer *> user_answers = {}) : Question(question),
+                                                                 time(time), user_answers(user_answers) {}
+    const std::vector<Answer *> &get_answers() const { return user_answers; }
+    uint64_t get_time() { return time; }
     unsigned short get_number_user_answers() const { return user_answers.size(); }
 };
 

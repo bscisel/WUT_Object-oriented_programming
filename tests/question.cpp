@@ -40,9 +40,9 @@ TEST(question, answered_question)
     std::vector<Answer *> user_answers;
     user_answers.push_back(answers[0]);
     user_answers.push_back(answers[2]);
-    Answered_question a_question1(question1, 5.1, user_answers);
-    EXPECT_EQ(a_question1.get_time(), 5.1);
-    EXPECT_EQ(a_question1.get_time(), 5.1);
+    Answered_question a_question1(question1, 8234, user_answers);
+    EXPECT_EQ(a_question1.get_time(), 8234);
+    EXPECT_EQ(a_question1.get_time(), 8234);
     EXPECT_EQ(a_question1.get_number_answers(), question1.get_number_answers());
     EXPECT_EQ(a_question1.get_number_user_answers(), 2);
 }
