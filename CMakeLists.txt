@@ -11,6 +11,7 @@ add_executable(main
                source/question.cpp
                source/category.cpp
                source/session.cpp
+               source/database.cpp
                )
 target_include_directories(main PRIVATE include)
 
@@ -23,6 +24,8 @@ add_executable(gtest
                source/category.cpp
                tests/session.cpp
                source/session.cpp
+               tests/database.cpp
+               source/database.cpp
                )
 target_include_directories(gtest PRIVATE include)
 target_link_libraries(gtest GTest::GTest GTest::Main)
