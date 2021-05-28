@@ -12,6 +12,7 @@ public:
     Answer(const std::string &text) : text(text) {}
     std::string get_text() const { return text; };
     virtual bool is_correct() const = 0;
+    virtual ~Answer(){};
 };
 
 class Correct_answer : public Answer

@@ -24,6 +24,7 @@ public:
         questions.push_back(question);
         points_scored += count_points(question);
     }
+    float get_points_scored() const { return points_scored; }
 };
 
 #endif

@@ -21,6 +21,7 @@ public:
     unsigned short get_number_answers() const { return answers.size(); }
     unsigned short get_correct_answers_count() const { return correct_count; }
     void add_answer(std::string text, bool is_correct);
+    ~Question();
 };
 
 class Answered_question : public Question
@@ -36,6 +37,7 @@ public:
     const std::vector<Answer *> &get_users_answers() const { return user_answers; }
     uint64_t get_time() { return time; }
     unsigned short get_number_user_answers() const { return user_answers.size(); }
+    ~Answered_question();
 };
 
 #endif

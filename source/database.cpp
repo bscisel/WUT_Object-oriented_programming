@@ -33,3 +33,21 @@ bool Database::read_data()
     }
     return true;
 }
+
+
+bool Database::save_to_file(std::string f_name)
+{
+    if (!f_name.empty() && f_name != file_name)
+    {
+        file.close();
+        file.open(f_name);
+    }
+    // send data from categories to file here
+    return true;
+}
+
+
+void Database::add_category(std::string name, std::vector<Question *> questions)
+{
+    categories.push_back(Category(name, questions));
+}
