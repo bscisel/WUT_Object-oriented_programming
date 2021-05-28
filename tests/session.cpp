@@ -30,5 +30,5 @@ TEST(session, new_session2)
     session.push_question(Answered_question(*questions[1], 13308));
     
     EXPECT_EQ(session.get_answered_questions()[0].get_text(), "Pytanie jeden?");
-    EXPECT_EQ(session.get_answered_questions()[0].get_answers()[0]->get_text(), "Odpowiedz 2");
+    EXPECT_EQ(session.get_answered_questions()[0].get_answers()[1]->get_text(), "Odpowiedz 2");
 }
