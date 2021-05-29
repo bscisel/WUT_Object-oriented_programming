@@ -1,6 +1,7 @@
 #include "gtest/gtest.h"
 #include "question.hpp"
 #include "answer.hpp"
+#include <memory>
 
 TEST(question, create_question)
 {
@@ -22,7 +23,7 @@ TEST(question, question_add_answer)
     question1.add_answer("Odpowiedz C", false);
     question1.add_answer("Odpowiedz D", true);
     EXPECT_EQ(question1.get_number_answers(), 4);
-    const std::vector<Answer *> user_answers = question1.get_answers();
+    const std::vector <std::shared_ptr <Answer>> user_answers = question1.get_answers();
     EXPECT_TRUE(user_answers[0]->is_correct());
     EXPECT_FALSE(user_answers[1]->is_correct());
     EXPECT_FALSE(user_answers[2]->is_correct());
@@ -36,8 +37,8 @@ TEST(question, answered_question)
     question1.add_answer("Odpowiedz B", false);
     question1.add_answer("Odpowiedz C", false);
     question1.add_answer("Odpowiedz D", true);
-    const std::vector<Answer *> answers = question1.get_answers();
-    std::vector<Answer *> user_answers;
+    const std::vector<std::shared_ptr <Answer>> answers = question1.get_answers();
+    std::vector<std::shared_ptr <Answer>> user_answers;
     user_answers.push_back(answers[0]);
     user_answers.push_back(answers[2]);
     Answered_question a_question1(question1, 8234, user_answers);

@@ -3,6 +3,8 @@
 
 #include <vector>
 #include <chrono>
+#include <iostream>
+#include <memory>
 #include "answer.hpp"
 
 class Question
@@ -10,13 +12,13 @@ class Question
 private:
     unsigned short points;
     std::string text;
-    std::vector<Answer *> answers;
+    std::vector<std::shared_ptr <Answer>> answers;
     unsigned short correct_count;
 
 public:
-    Question(unsigned short points, std::string text) : points(points), text(text) {}
+    Question(unsigned short points, std::string text) : points(points), text(text) {std::cout<<"cons question\n"; }
     unsigned short get_points() const { return points; }
-    const std::vector<Answer *> &get_answers() const { return answers; }
+    const std::vector<std::shared_ptr <Answer>> &get_answers() const { return answers; }
     const std::string &get_text() const { return text; }
     unsigned short get_number_answers() const { return answers.size(); }
     unsigned short get_correct_answers_count() const { return correct_count; }
@@ -28,16 +30,16 @@ class Answered_question : public Question
 {
 private:
     uint64_t time;
-    std::vector<Answer *> user_answers;
+    std::vector<std::shared_ptr <Answer>> user_answers;
 
 public:
     Answered_question(Question question, uint64_t time,
-                      std::vector<Answer *> user_answers = {}) : Question(question),
-                                                                 time(time), user_answers(user_answers) {}
-    const std::vector<Answer *> &get_users_answers() const { return user_answers; }
+                      std::vector<std::shared_ptr <Answer>> user_answers = {}) : Question(question),
+                                                                 time(time), user_answers(user_answers) {std::cout<<"ans cons question\n"; }
+    const std::vector<std::shared_ptr <Answer>> &get_users_answers() const { return user_answers; }
     uint64_t get_time() { return time; }
     unsigned short get_number_user_answers() const { return user_answers.size(); }
-    ~Answered_question();
+    //~Answered_question(){};
 };
 
 #endif
