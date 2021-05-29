@@ -6,17 +6,17 @@
 class User
 {
 private:
-    static unsigned user_counter;
-    unsigned user_id;
+    static unsigned short user_counter;
+    unsigned short user_id;
     float points{0};
     std::string name;
 
 public:
-    User (std::string name) : name(name)
+    User(std::string name) : name(name)
     {
         user_id = ++user_counter;
     };
-    unsigned get_user_id() { return user_id; } //potrzebne jest id??
+    unsigned get_user_id() const { return user_id; } // potrzebne jest id??
     std::string get_name() const { return name; }
     void add_points(float session_result) { points += session_result; }
     float get_points() const { return points; }

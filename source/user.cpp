@@ -1,4 +1,4 @@
 #include "user.hpp"
 
-unsigned User::user_counter{0};
+unsigned short User::user_counter{0};
 

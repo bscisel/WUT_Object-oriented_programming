@@ -7,7 +7,7 @@ TEST(database, create_database)
     database.open_file();
     database.read_data();
     EXPECT_EQ(database.get_file_name(), "data.json");
-    EXPECT_EQ(database.get_categories()->size(), 1);
+    EXPECT_EQ(database.get_categories().size(), 1);
     database.add_category("Kategoria X");
-    EXPECT_EQ(database.get_categories()->size(), 2);
+    EXPECT_EQ(database.get_categories().size(), 2);
 }

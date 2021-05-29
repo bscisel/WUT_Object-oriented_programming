@@ -25,7 +25,6 @@ public:
     static unsigned get_number_categories() { return category_counter; } // nie w database?
     void add_question(Question *question) { questions.push_back(question); }
     int get_number_questions() { return questions.size(); }
-    //~Category();
 };
 
 #endif

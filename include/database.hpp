@@ -24,5 +24,5 @@ public:
     bool save_to_file(std::string f_name = {});
     std::string get_file_name() { return file_name; }
     void add_category(std::string name, std::vector<Question *> questions = {});
-    std::vector<Category>* get_categories() { return &categories;}
+    const std::vector<Category> &get_categories() { return categories; }
 };
