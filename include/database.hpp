@@ -11,16 +11,11 @@ class Database
 {
 private:
     std::string file_name;
-    std::ifstream file;
     std::vector<Category> categories;
     json data;
 
 public:
     Database(std::string file_name = {}) : file_name(file_name){};
-    ~Database()
-    {
-        file.close();
-    }
     bool open_file(std::string f_name = {});
     bool read_data();
     bool save_to_file(std::string f_name = {});

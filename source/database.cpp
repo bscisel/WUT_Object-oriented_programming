@@ -32,10 +32,11 @@ bool Database::open_file(std::string f_name)
     if (f_name.empty())
         f_name = file_name;
 
-    file.open(f_name);
-    if (file)
+    std::ifstream input_file(f_name);
+    if (input_file)
     {
-        file >> data;
+        input_file >> data;
+        input_file.close();
         return true;
     }
     return false;
@@ -43,38 +44,33 @@ bool Database::open_file(std::string f_name)
 
 bool Database::read_data()
 {
-    if (file)
+    for (auto &category : data["categories"])
     {
-        for (auto &category : data["categories"])
+        std::vector<Question *> questions;
+        for (auto question : category["questions"])
         {
-            std::vector<Question *> questions;
-            for (auto question : category["questions"])
-            {
-                Question *new_question = new Question(question["points"], question["text"]);
-                for (auto answer : question["answers"])
-                    new_question->add_answer(answer["text"], answer["is_correct"]);
-                questions.push_back(new_question);
-            }
-            categories.push_back(Category(category["name"], questions));
+            Question *new_question = new Question(question["points"], question["text"]);
+            for (auto answer : question["answers"])
+                new_question->add_answer(answer["text"], answer["is_correct"]);
+            questions.push_back(new_question);
         }
-        return true;
+        categories.push_back(Category(category["name"], questions));
     }
-    return false;
+    return true;
 }
 
 bool Database::save_to_file(std::string f_name)
 {
-    if (f_name.empty() /* && f_name != file_name*/)
+    if (f_name.empty())
     {
-        file.close();
         f_name = file_name;
-        // file.open(f_name);
     }
-    std::ofstream output(f_name);
-    if (output)
+    std::ofstream output_file(f_name);
+    if (output_file)
     {
         to_json(data, *this);
-        output << std::setw(4) << data << std::endl;
+        output_file << std::setw(4) << data << std::endl;
+        output_file.close();
         return true;
     }
     return false;
