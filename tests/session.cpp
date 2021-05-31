@@ -33,9 +33,9 @@ TEST(session, new_session2)
     EXPECT_EQ(session.get_answered_questions()[0].get_answers()[1]->get_text(), "Odpowiedz 2");
 }
 
-TEST (session, count_points)
+TEST(session, count_points)
 {
-     Category category("Kategoria jeden");
+    Category category("Kategoria jeden");
     Question *question = new Question(3, "Pytanie jeden?");
     question->add_answer("Odpowiedz 1", true);
     question->add_answer("Odpowiedz 2", false);

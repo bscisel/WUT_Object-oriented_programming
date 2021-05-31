@@ -10,4 +10,3 @@ void Question::add_answer(std::string text, bool is_correct)
     else
         answers.push_back(std::make_shared<Wrong_answer>(text));
 }
-

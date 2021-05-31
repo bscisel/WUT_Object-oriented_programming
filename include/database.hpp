@@ -7,16 +7,15 @@
 
 using json = nlohmann::json;
 
-
 class Database
 {
 private:
     std::string file_name;
     std::ifstream file;
     std::vector<Category> categories;
+    json data;
 
 public:
-    json data;
     Database(std::string file_name = {}) : file_name(file_name){};
     ~Database()
     {
@@ -29,4 +28,3 @@ public:
     void add_category(std::string name, std::vector<Question *> questions = {});
     const std::vector<Category> &get_categories() const { return categories; }
 };
-

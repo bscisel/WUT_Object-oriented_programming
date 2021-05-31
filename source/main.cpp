@@ -2,14 +2,14 @@
 #include "question.hpp"
 #include <iostream>
 
-
 int main()
 {
     Database siemka("data.json");
-    siemka.open_file();
-    siemka.read_data();
+    if (siemka.open_file())
+        std::cout << "Otwarto plik!" << std::endl;
 
-    std::cout << siemka.data["categories"][0]["name"] << std::endl;
+    if (siemka.read_data())
+        std::cout << "Przeczytano dane!" << std::endl;
 
     Question question1(3, "Question?");
     question1.add_answer("Odpowiedz A", true);
@@ -17,8 +17,9 @@ int main()
     question1.add_answer("Odpowiedz C", false);
     question1.add_answer("Odpowiedz D", true);
 
-    siemka.add_category("siku", {&question1});
-    siemka.save_to_file("new_file.json");
+    siemka.add_category("Nowa kategoria", {&question1});
+    if (siemka.save_to_file("new_data.json"))
+        std::cout << "Zapisano plik!" << std::endl;
 
     /*
     std::vector<std::shared_ptr <Answer>> user_answers;

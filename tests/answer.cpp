@@ -13,4 +13,3 @@ TEST(answer, create_wrong_answer)
     EXPECT_EQ(answer.get_text(), "answer");
     EXPECT_NE(answer.get_text(), "awdwd");
 }
-

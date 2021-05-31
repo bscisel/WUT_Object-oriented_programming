@@ -8,7 +8,6 @@
 
 using json = nlohmann::json;
 
-
 class Category
 {
 private:
