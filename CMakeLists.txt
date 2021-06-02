@@ -1,34 +1,30 @@
 cmake_minimum_required(VERSION 3.16.3)
-project(quiz)
+
+project(proi_project_quiz LANGUAGES CXX)
+
+# set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 set(CMAKE_CXX_FLAGS "-Wall -Wextra -pedantic")
 set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(GTest REQUIRED)
 
-add_executable(main
-               source/main.cpp
-               source/question.cpp
-               source/category.cpp
-               source/session.cpp
-               source/database.cpp
-               source/user.cpp
-               )
-target_include_directories(main PRIVATE include)
+add_subdirectory(quiz)
+add_subdirectory(tests)
 
-add_executable(gtest
-               tests/main.cpp
-               tests/answer.cpp
-               tests/question.cpp
-               source/question.cpp
-               tests/category.cpp
-               source/category.cpp
-               tests/session.cpp
-               source/session.cpp
-               tests/database.cpp
-               source/database.cpp
-               tests/user.cpp
-               source/user.cpp
-               )
-target_include_directories(gtest PRIVATE include)
-target_link_libraries(gtest GTest::GTest GTest::Main)
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+
+find_package(Qt5 COMPONENTS Widgets REQUIRED)
+
+add_executable(proi_project_quiz
+    main.cpp
+    mainwindow.cpp
+    mainwindow.h
+    mainwindow.ui
+)
+
+target_link_libraries(proi_project_quiz PRIVATE Qt5::Widgets)
+target_link_libraries(proi_project_quiz PRIVATE quiz)
