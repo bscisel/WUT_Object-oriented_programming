@@ -36,7 +36,7 @@ public:
                       std::vector<std::shared_ptr<Answer>> user_answers = {}) : Question(question),
                                                                                 time(time), user_answers(user_answers) {}
     const std::vector<std::shared_ptr<Answer>> &get_users_answers() const { return user_answers; }
-    uint64_t get_time() { return time; }
+    uint64_t get_time() const { return time; }
     unsigned short get_number_user_answers() const { return user_answers.size(); }
 };
 

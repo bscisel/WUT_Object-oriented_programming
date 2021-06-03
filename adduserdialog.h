@@ -15,6 +15,11 @@ class AddUserDialog : public QDialog
 public:
     explicit AddUserDialog(QWidget *parent = nullptr);
     ~AddUserDialog();
+    QString get_name_from_input();
+
+private slots:
+    void on_buttonBox_accepted();
+    void on_buttonBox_rejected();
 
 private:
     Ui::AddUserDialog *ui;

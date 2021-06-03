@@ -29,6 +29,8 @@ private:
     Ui::MainWindow *ui;
     Database *database;
     Database_users *database_users;
+    void load_users_into_widgetlist();
+    void add_user_to_list(const std::shared_ptr<User> &user, const QString &name);
 };
 
 #endif

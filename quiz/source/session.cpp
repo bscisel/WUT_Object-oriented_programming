@@ -8,7 +8,14 @@ uint64_t time()
     return duration_cast<milliseconds>(system_clock::now().time_since_epoch()).count();
 }
 
-Session::Session()
+Session::Session(uint64_t start_time,
+                 uint64_t session_time,
+                 float points_scored,
+                 std::vector<Answered_question> questions)
+    : start_time(start_time),
+      session_time(session_time),
+      points_scored(points_scored),
+      questions(questions)
 {
     start_time = time();
 }
