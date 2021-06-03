@@ -3,13 +3,14 @@
 
 TEST(answer, create_correct_answer)
 {
-    Correct_answer answer("answer");
-    EXPECT_EQ(answer.get_text(), "answer");
+    Answer answer("correct answer", true);
+    EXPECT_EQ(answer.get_text(), "correct answer");
+    EXPECT_TRUE(answer.is_correct());
 }
 
 TEST(answer, create_wrong_answer)
 {
-    Wrong_answer answer("answer");
-    EXPECT_EQ(answer.get_text(), "answer");
-    EXPECT_NE(answer.get_text(), "awdwd");
+    Answer answer("wrong answer", false);
+    EXPECT_EQ(answer.get_text(), "wrong answer");
+    EXPECT_FALSE(answer.is_correct());
 }

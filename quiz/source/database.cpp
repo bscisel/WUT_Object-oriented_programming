@@ -1,25 +1,22 @@
 #include "database.hpp"
-#include "category.hpp"
-#include "question.hpp"
-#include "nlohmann/json.hpp"
 
-void to_json(json &j, const std::shared_ptr<Answer> answer)
+void to_json(json &j, const Answer &answer)
 {
-    j = {{"text", answer->get_text()}};
-    j["is_correct"] = answer->is_correct();
+    j["text"] = answer.get_text();
+    j["is_correct"] = answer.is_correct();
 }
 
 void to_json(json &j, const Question *question)
 {
     j = {{"anwers", question->get_answers()}};
-    j["text"] = question->get_text();
     j["points"] = question->get_points();
+    j["text"] = question->get_text();
 }
 
-void to_json(json &j, const Category &cat)
+void to_json(json &j, const std::shared_ptr<Category> &cat)
 {
-    j = {{"questions", cat.get_questions()}};
-    j["name"] = cat.get_name();
+    j = {{"questions", cat->get_questions()}};
+    j["name"] = cat->get_name();
 }
 
 void to_json(json &j, const Database &base)
@@ -47,14 +44,14 @@ bool Database::read_data()
     for (auto &category : data["categories"])
     {
         std::vector<Question *> questions;
-        for (auto question : category["questions"])
+        for (auto &question : category["questions"])
         {
             Question *new_question = new Question(question["points"], question["text"]);
-            for (auto answer : question["answers"])
+            for (auto &answer : question["answers"])
                 new_question->add_answer(answer["text"], answer["is_correct"]);
             questions.push_back(new_question);
         }
-        categories.push_back(Category(category["name"], questions));
+        categories.push_back(std::make_shared<Category>(category["name"], questions));
     }
     return true;
 }
@@ -62,9 +59,8 @@ bool Database::read_data()
 bool Database::save_to_file(std::string f_name)
 {
     if (f_name.empty())
-    {
         f_name = file_name;
-    }
+
     std::ofstream output_file(f_name);
     if (output_file)
     {
@@ -76,14 +72,17 @@ bool Database::save_to_file(std::string f_name)
     return false;
 }
 
-void Database::add_category(std::string name, std::vector<Question *> questions)
+std::shared_ptr<Category> Database::add_category(const std::string &name, std::vector<Question *> questions) // przez wartosc?
 {
-    categories.push_back(Category(name, questions));
+    std::shared_ptr<Category> pointer_to_category {std::make_shared<Category>(name, questions)};
+    categories.push_back(pointer_to_category);
+    return pointer_to_category;
 }
 
-unsigned long Database::get_questions_number() const {
+unsigned long Database::get_questions_number() const
+{
     unsigned long sum = 0;
-    for (auto category : categories)
-        sum += category.get_number_questions();
+    for (auto &category : categories)
+        sum += category->get_questions_number();
     return sum;
 }

@@ -1,36 +1,18 @@
 #include "database_users.hpp"
-#include "user.hpp"
-#include "nlohmann/json.hpp"
-#include <memory>
-#include <fstream>
-#include <iomanip>
 
-// void to_json(json &j, const std::shared_ptr<Answer> answer)
-// {
-//     j = {{"text", answer->get_text()}};
-//     j["is_correct"] = answer->is_correct();
-// }
-
-// void to_json(json &j, const Question *question)
-// {
-//     j = {{"anwers", question->get_answers()}};
-//     j["text"] = question->get_text();
-//     j["points"] = question->get_points();
-// }
-
-void to_json(json &j, const std::shared_ptr<Answer> &answer)
+void to_json(json &j, const Saved_answer &saved_answer)
 {
-    j["text"] = answer->get_text();
-    j["is_correct"] = answer->is_correct();
+    j["text"] = saved_answer.get_text();
+    j["correct"] = saved_answer.is_correct();
+    j["user_answer"] = saved_answer.get_user_answer();
 }
 
 void to_json(json &j, const Answered_question &a_question)
 {
-    j = {{"answers", a_question.get_answers()}};
     j = {{"user_answers", a_question.get_users_answers()}};
     j["points"] = a_question.get_points();
     j["text"] = a_question.get_text();
-    j["correct_count"] = a_question.get_correct_answers_count();
+    j["correct_count"] = a_question.get_correct_answers_number();
     j["time"] = a_question.get_time();
 }
 
@@ -73,14 +55,31 @@ bool Database_users::read_data()
 {
     for (auto &user : data["users"])
     {
-        // for (auto question : category["questions"])
-        // {
-        //     Question *new_question = new Question(question["points"], question["text"]);
-        //     for (auto answer : question["answers"])
-        //         new_question->add_answer(answer["text"], answer["is_correct"]);
-        //     questions.push_back(new_question);
-        // }
-        users.push_back(std::make_shared<User>(user["name"], user["points"]));
+        std::vector<Session> user_sessions;
+        for (auto &session : user["user_sessions"])
+        {
+            std::vector<Answered_question> questions;
+            for (auto &question : session["questions"])
+            {
+                std::vector<Saved_answer> user_answers;
+                for (auto &saved_answer : question["user_answers"])
+                {
+                    user_answers.push_back(Saved_answer(
+                        Answer(saved_answer["text"], saved_answer["correct"]),
+                        saved_answer["user_answer"]));
+                }
+                questions.push_back(Answered_question(
+                    Question(question["points"], question["text"], question["correct_count"]),
+                    question["time"],
+                    user_answers));
+            }
+            user_sessions.push_back(Session(
+                session["start_time"],
+                session["session_time"],
+                session["points_scored"],
+                questions));
+        }
+        users.push_back(std::make_shared<User>(user["name"], user["points"], user_sessions));
     }
     return true;
 }
@@ -88,9 +87,8 @@ bool Database_users::read_data()
 bool Database_users::save_to_file(std::string f_name)
 {
     if (f_name.empty())
-    {
         f_name = file_name;
-    }
+
     std::ofstream output_file(f_name);
     if (output_file)
     {
@@ -102,9 +100,9 @@ bool Database_users::save_to_file(std::string f_name)
     return false;
 }
 
-std::shared_ptr<User> Database_users::add_user(std::string name)
+std::shared_ptr<User> Database_users::add_user(const std::string &name)
 {
-    std::shared_ptr<User> pointer_to_user {std::make_shared<User>(name)};
+    std::shared_ptr<User> pointer_to_user{std::make_shared<User>(name)};
     users.push_back(pointer_to_user);
     return pointer_to_user;
 }

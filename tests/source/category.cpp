@@ -11,10 +11,10 @@ TEST(category, create_category)
     EXPECT_EQ(category2.get_name(), "Category 2");
     category2.set_name("Category 3");
     EXPECT_EQ(category2.get_name(), "Category 3");
-    EXPECT_EQ(Category::get_number_categories(), 2);
-    EXPECT_EQ(category1.get_number_questions(), 0);
+    EXPECT_EQ(Category::get_categories_number(), 2);
+    EXPECT_EQ(category1.get_questions_number(), 0);
     category1.add_question(new Question(3, "Jak masz na imie?"));
     category1.add_question(new Question(2, "Ile masz lat?"));
-    EXPECT_EQ(category1.get_number_questions(), 2);
+    EXPECT_EQ(category1.get_questions_number(), 2);
     EXPECT_EQ(category1.get_questions()[0]->get_text(), "Jak masz na imie?");
 }

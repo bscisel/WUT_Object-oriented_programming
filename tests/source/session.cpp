@@ -26,11 +26,11 @@ TEST(session, new_session2)
 
     std::vector<Question *> questions = category.get_questions();
     Session session;
-    session.push_question(Answered_question(*questions[0], 10421, {questions[0]->get_answers()[1]}));
+    session.push_question(Answered_question(*questions[0], 10421, {Saved_answer(questions[0]->get_answers()[1], true)}));
     session.push_question(Answered_question(*questions[1], 13308));
 
     EXPECT_EQ(session.get_answered_questions()[0].get_text(), "Pytanie jeden?");
-    EXPECT_EQ(session.get_answered_questions()[0].get_answers()[1]->get_text(), "Odpowiedz 2");
+    EXPECT_EQ(session.get_answered_questions()[0].get_answers()[1].get_text(), "Odpowiedz 2");
 }
 
 TEST(session, count_points)
@@ -48,8 +48,8 @@ TEST(session, count_points)
     std::vector<Question *> questions = category.get_questions();
     Session session;
     EXPECT_EQ(session.get_points_scored(), 0);
-    session.push_question(Answered_question(*questions[0], 10421, {questions[0]->get_answers()[1]}));
+    session.push_question(Answered_question(*questions[0], 10421, {Saved_answer(questions[0]->get_answers()[1], true)}));
     EXPECT_EQ(session.get_points_scored(), 0);
-    session.push_question(Answered_question(*questions[1], 13308, {questions[1]->get_answers()[0]}));
+    session.push_question(Answered_question(*questions[1], 13308, {Saved_answer(questions[1]->get_answers()[0], true)}));
     EXPECT_EQ(session.get_points_scored(), 2);
 }

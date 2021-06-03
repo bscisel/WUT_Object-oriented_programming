@@ -1,12 +1,8 @@
 #include "question.hpp"
 
-void Question::add_answer(std::string text, bool is_correct)
+void Question::add_answer(const std::string &text, bool is_correct)
 {
+    answers.push_back(Answer(text, is_correct));
     if (is_correct)
-    {
         correct_count++;
-        answers.push_back(std::make_shared<Correct_answer>(text));
-    }
-    else
-        answers.push_back(std::make_shared<Wrong_answer>(text));
 }

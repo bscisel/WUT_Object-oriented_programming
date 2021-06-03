@@ -2,8 +2,9 @@
 #define SESSION_HPP
 
 #include "question.hpp"
-#include <chrono>
 #include <vector>
+#include <chrono>
+#include <algorithm>
 
 class Session
 {

@@ -9,7 +9,7 @@ TEST(question, create_question)
     EXPECT_EQ(question1.get_points(), 3);
     EXPECT_NE(question1.get_points(), 5);
     EXPECT_EQ(question1.get_text(), "Question?");
-    EXPECT_EQ(question1.get_number_answers(), 0);
+    EXPECT_EQ(question1.get_all_answers_number(), 0);
 }
 
 TEST(question, question_add_answer)
@@ -17,17 +17,17 @@ TEST(question, question_add_answer)
     Question question1(3, "Question?");
     EXPECT_EQ(question1.get_points(), 3);
     EXPECT_EQ(question1.get_text(), "Question?");
-    EXPECT_EQ(question1.get_number_answers(), 0);
+    EXPECT_EQ(question1.get_all_answers_number(), 0);
     question1.add_answer("Odpowiedz A", true);
     question1.add_answer("Odpowiedz B", false);
     question1.add_answer("Odpowiedz C", false);
     question1.add_answer("Odpowiedz D", true);
-    EXPECT_EQ(question1.get_number_answers(), 4);
-    const std::vector<std::shared_ptr<Answer>> user_answers = question1.get_answers();
-    EXPECT_TRUE(user_answers[0]->is_correct());
-    EXPECT_FALSE(user_answers[1]->is_correct());
-    EXPECT_FALSE(user_answers[2]->is_correct());
-    EXPECT_TRUE(user_answers[3]->is_correct());
+    EXPECT_EQ(question1.get_all_answers_number(), 4);
+    const std::vector<Answer> &user_answers = question1.get_answers();
+    EXPECT_TRUE(user_answers[0].is_correct());
+    EXPECT_FALSE(user_answers[1].is_correct());
+    EXPECT_FALSE(user_answers[2].is_correct());
+    EXPECT_TRUE(user_answers[3].is_correct());
 }
 
 TEST(question, answered_question)
@@ -37,13 +37,13 @@ TEST(question, answered_question)
     question1.add_answer("Odpowiedz B", false);
     question1.add_answer("Odpowiedz C", false);
     question1.add_answer("Odpowiedz D", true);
-    const std::vector<std::shared_ptr<Answer>> answers = question1.get_answers();
-    std::vector<std::shared_ptr<Answer>> user_answers;
-    user_answers.push_back(answers[0]);
-    user_answers.push_back(answers[2]);
+    const std::vector<Answer> &answers = question1.get_answers();
+    std::vector<Saved_answer> user_answers;
+    user_answers.push_back(Saved_answer(answers[0], true));
+    user_answers.push_back(Saved_answer(answers[2], true));
     Answered_question a_question1(question1, 8234, user_answers);
     EXPECT_EQ(a_question1.get_time(), 8234);
     EXPECT_EQ(a_question1.get_time(), 8234);
-    EXPECT_EQ(a_question1.get_number_answers(), question1.get_number_answers());
-    EXPECT_EQ(a_question1.get_number_user_answers(), 2);
+    EXPECT_EQ(a_question1.get_all_answers_number(), question1.get_all_answers_number());
+    EXPECT_EQ(a_question1.get_user_answers_number(), 2);
 }

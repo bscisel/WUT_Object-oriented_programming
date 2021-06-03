@@ -15,12 +15,13 @@ private:
     std::vector<Session> user_sessions;
 
 public:
-    User(std::string name, float points = {0.f}) : name(name), points(points)
+    User(std::string name, float points = {0.f}, std::vector<Session> user_sessions = {})
+        : name(name), points(points), user_sessions(user_sessions)
     {
         user_id = ++user_counter;
     };
-    unsigned get_user_id() const { return user_id; } // potrzebne jest id?? odp: oczywiscie
-    std::string get_name() const { return name; }
+    unsigned get_user_id() const { return user_id; } // potrzebne jest id??
+    const std::string &get_name() const { return name; }
     void add_points(float session_result) { points += session_result; }
     float get_points() const { return points; }
     void add_session();

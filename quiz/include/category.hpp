@@ -1,8 +1,8 @@
 #ifndef CATEGORY_HPP
 #define CATEGORY_HPP
 
-#include "question.hpp"
 #include "nlohmann/json.hpp"
+#include "question.hpp"
 #include <string>
 #include <vector>
 
@@ -17,18 +17,20 @@ private:
     std::vector<Question *> questions;
 
 public:
-    Category(std::string name, std::vector<Question *> questions = {}) : name(name), questions(questions)
+    Category(const std::string &name, std::vector<Question *> questions = {}) // tu przez wartosc?
+        : name(name),
+          questions(questions)
     {
         category_id = ++category_counter;
     }
-    std::string get_name() const { return name; }
-    void set_name(std::string new_name) { name = new_name; }
+    ~Category();
+    const std::string &get_name() const { return name; }
+    void set_name(const std::string &new_name) { name = new_name; }
     unsigned short get_id() const { return category_id; }
     const std::vector<Question *> &get_questions() const { return questions; }
-    static unsigned get_number_categories() { return category_counter; } // nie w database?
     void add_question(Question *question) { questions.push_back(question); }
-    int get_number_questions() { return questions.size(); }
-    
+    int get_questions_number() const { return questions.size(); }
+    static unsigned get_categories_number() { return category_counter; } // nie w database?
 };
 
 #endif

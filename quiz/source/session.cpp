@@ -1,6 +1,4 @@
 #include "session.hpp"
-#include <chrono>
-#include <algorithm>
 
 uint64_t time()
 {
@@ -29,11 +27,11 @@ float Session::count_points(const Answered_question &question) const
 {
     unsigned short user_correct{0};
     unsigned short user_incorrect{0};
-    unsigned short all_answers = question.get_number_answers();
-    unsigned short correct_answers = question.get_correct_answers_count();
-    for (auto answer : question.get_users_answers())
+    unsigned short all_answers = question.get_all_answers_number();
+    unsigned short correct_answers = question.get_correct_answers_number();
+    for (auto &answer : question.get_users_answers())
     {
-        if (answer->is_correct())
+        if (answer.is_correct())
             user_correct++;
         else
             user_incorrect++;

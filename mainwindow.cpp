@@ -46,8 +46,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_openFileButton_clicked()
 {
-    Database data;
-    std::cout << "siema" << std::endl;
+    
 }
 
 void MainWindow::on_exitButton_clicked()
