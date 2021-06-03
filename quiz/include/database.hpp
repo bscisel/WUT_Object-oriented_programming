@@ -1,8 +1,11 @@
+#ifndef DATABASE_HPP
+#define DATABASE_HPP
+
 #include "category.hpp"
 #include "nlohmann/json.hpp"
 #include <string>
+#include <vector>
 #include <fstream>
-#include <string>
 #include <iomanip>
 
 using json = nlohmann::json;
@@ -22,4 +25,8 @@ public:
     std::string get_file_name() { return file_name; }
     void add_category(std::string name, std::vector<Question *> questions = {});
     const std::vector<Category> &get_categories() const { return categories; }
+    unsigned long get_categories_number() const { return categories.size(); }
+    unsigned long get_questions_number() const;
 };
+
+#endif

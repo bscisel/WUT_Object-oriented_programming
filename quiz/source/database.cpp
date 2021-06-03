@@ -80,3 +80,10 @@ void Database::add_category(std::string name, std::vector<Question *> questions)
 {
     categories.push_back(Category(name, questions));
 }
+
+unsigned long Database::get_questions_number() const {
+    unsigned long sum = 0;
+    for (auto category : categories)
+        sum += category.get_number_questions();
+    return sum;
+}

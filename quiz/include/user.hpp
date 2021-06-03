@@ -16,7 +16,7 @@ public:
     {
         user_id = ++user_counter;
     };
-    unsigned get_user_id() const { return user_id; } // potrzebne jest id??
+    unsigned get_user_id() const { return user_id; } // potrzebne jest id?? odp: oczywiscie
     std::string get_name() const { return name; }
     void add_points(float session_result) { points += session_result; }
     float get_points() const { return points; }

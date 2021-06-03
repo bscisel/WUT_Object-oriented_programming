@@ -13,7 +13,7 @@ private:
     unsigned short points;
     std::string text;
     std::vector<std::shared_ptr<Answer>> answers;
-    unsigned short correct_count;
+    unsigned short correct_count {0};
 
 public:
     Question(unsigned short points, std::string text) : points(points), text(text) {}

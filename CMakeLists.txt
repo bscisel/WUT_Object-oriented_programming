@@ -24,6 +24,9 @@ add_executable(proi_project_quiz
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui
+    adduserdialog.cpp
+    adduserdialog.h
+    adduserdialog.ui
 )
 
 target_link_libraries(proi_project_quiz PRIVATE Qt5::Widgets)
