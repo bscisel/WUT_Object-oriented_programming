@@ -57,9 +57,12 @@ void MainWindow::on_exitButton_clicked()
 void MainWindow::on_addUserButton_clicked()
 {
     AddUserDialog dialog(this);
-    if(dialog.exec()) {
+    if (dialog.exec()) {
         QString entered_user_name = dialog.get_name_from_input();
-        std::shared_ptr<User> pointer_to_user = database_users->add_user(entered_user_name.toStdString());
-        add_user_to_list(pointer_to_user, entered_user_name);
+        if (!entered_user_name.isEmpty()) // trzeba to zrobic lepiej
+        {
+            std::shared_ptr<User> pointer_to_user = database_users->add_user(entered_user_name.toStdString());
+            add_user_to_list(pointer_to_user, entered_user_name);
+        }
     }
 }
