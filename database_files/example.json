@@ -1,0 +1,850 @@
+{
+    "categories": [
+        {
+            "name": "Formula 1",
+            "questions": [
+                {
+                    "anwers": [
+                        {
+                            "is_correst": false,
+                            "text": "Eau Rouge"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Bridge"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Becketts"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Stowe"
+                        }
+                    ],
+                    "points": 3,
+                    "text": "At which corner did Michael Schumacher break his leg in 1999?"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": false,
+                            "text": "Missing front wing"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Faulty gearbox"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "New steering wheel"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Missing wheel"
+                        }
+                    ],
+                    "points": 2,
+                    "text": "Michael Schumacher made a late pitstop in the 1999 French Grand Prix, but why did he pit?"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": false,
+                            "text": "S-Wing"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "T-Wing"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "X-Wing"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "V-Wing"
+                        }
+                    ],
+                    "points": 1,
+                    "text": "In the Argentinian Grand Prix of 1997 the Tyrrells sported a radical piece of bodywork: what was it called?"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": false,
+                            "text": "His team mate"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "A stray horse"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "A spectator"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "His brother"
+                        }
+                    ],
+                    "points": 1,
+                    "text": " Who had Ralf Schumacher collided with that upset him so much in the 1997 Luxembourg Grand Prix?"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": false,
+                            "text": "Puncture"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Blown engine"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Collision"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Disqualified"
+                        }
+                    ],
+                    "points": 3,
+                    "text": "In the 2000 United States Grand Prix, Mika Hakkinen was forced to retire after chasing hard. Why?"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": false,
+                            "text": "Gaston Mazzacane"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Ricardo Zonta"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Jarno Trulli"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Marc Gene"
+                        }
+                    ],
+                    "points": 2,
+                    "text": "In the 2000 Belgian Grand Prix there was a backmarker between Mika Hakkinen and Michael Schumacher as Mika made his stunning overtaking move: who was he?"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": false,
+                            "text": "Luca Badoer"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Mika Salo"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Tarso Marques"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Rubens Barrichello"
+                        }
+                    ],
+                    "points": 1,
+                    "text": "Which Ferrari stand-in moved over to allow Irvine to win the 1999 German Grand Prix?"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": false,
+                            "text": "Enrique Bernoldi"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Giancarlo Fisichella"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Tarso Marques"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Jos Verstappen"
+                        }
+                    ],
+                    "points": 1,
+                    "text": "In the 2001 Brazilian Grand Prix, which driver crashed into Juan Pablo Montoya to cost Montoya an almost certain victory?"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": false,
+                            "text": "Arrows"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Jordan"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Minardi"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Sauber"
+                        }
+                    ],
+                    "points": 1,
+                    "text": "Which team scored a fabulous debut victory followed by a second place in the Belgian Grand Prix of 1998?"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": false,
+                            "text": "Michael Schumacher"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Mika Hakkinen"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Rubens Barrichello"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "David Coulthard"
+                        }
+                    ],
+                    "points": 2,
+                    "text": "Who qualified for the pole in the 2001 Monaco Grand Prix?"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": false,
+                            "text": "Giovanni Lavaggi"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Esteban Tuero"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Ricardo Rosset"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Stephan Sarrazin"
+                        }
+                    ],
+                    "points": 2,
+                    "text": "Which driver made a one race debut in 1999 with Minardi?"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": false,
+                            "text": "Steering wheel warning lights"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Taller cars"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Slimmer cars"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Banned active suspension"
+                        }
+                    ],
+                    "points": 1,
+                    "text": "In 1998 major rule changes were implemented. Grooved tyres was one, what was the other?"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": false,
+                            "text": "Gerhard Berger"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Mika Hakkinen"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Nicola Larini"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Jean Alesi"
+                        }
+                    ],
+                    "points": 1,
+                    "text": "Which driver ran out of fuel in the 1997 Australian Grand Prix?"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": false,
+                            "text": "Arrows"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Benetton"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Jordan"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Ferrari"
+                        }
+                    ],
+                    "points": 1,
+                    "text": " In the 1999 Italian Grand Prix a car was ransacked by spectators after it had crashed. Which team owned that car?"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": false,
+                            "text": "Johnny Herbert"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Eddie Irvine"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Jarno Trulli"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Rubens Barrichello"
+                        }
+                    ],
+                    "points": 3,
+                    "text": "Who finished third in the 1999 European Grand Prix?"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": false,
+                            "text": "He raced without underwear"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "He had a broken hand"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "He was wearing someone elses helmet"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "His view was obstructed"
+                        }
+                    ],
+                    "points": 2,
+                    "text": "Why was the Monaco Grand Prix in 1996 slightly bizarre for David Coulthard?"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": true,
+                            "text": "French GP"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Brazilian GP"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Italian GP"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "German GP"
+                        }
+                    ],
+                    "points": 1,
+                    "text": "At which race in 1998 was Jan Magnussen replaced by Jos Verstappen at Stewart?"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": false,
+                            "text": "3"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "4"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "2"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "5"
+                        }
+                    ],
+                    "points": 3,
+                    "text": "How many cars stalled on the grid in the 2001 Austrian Grand Prix?"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": true,
+                            "text": "Mercedes"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Peugeot"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Ferrari"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Honda"
+                        }
+                    ],
+                    "points": 1,
+                    "text": "Final question: In the 2000 German Grand Prix a campaigner ran across the track but who was he trying to protest against?"
+                }
+            ]
+        },
+        {
+            "name": "Geography - borders",
+            "questions": [
+                {
+                    "anwers": [
+                        {
+                            "is_correst": true,
+                            "text": "Russia"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Ukraine"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Gemrnay"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Slovenia"
+                        }
+                    ],
+                    "points": 1,
+                    "text": "Choose all correct answers. Poland borders with:"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": true,
+                            "text": "Turkey"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Ukraine"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Slovakia"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Greece"
+                        }
+                    ],
+                    "points": 2,
+                    "text": "Choose all correct answers. Bulgaria borders with:"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": false,
+                            "text": "Vietnam"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Laos"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Malaysia"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Papua New Guinea"
+                        }
+                    ],
+                    "points": 2,
+                    "text": "Choose all correct answers. Indonesia borders with:"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": true,
+                            "text": "Angola"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Kenya"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Tanzania"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Zimbabwe"
+                        }
+                    ],
+                    "points": 3,
+                    "text": "Choose all correct answers. Zambia borders with:"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": false,
+                            "text": "Bhutan"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Tajikistan"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "India"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Pakistan"
+                        }
+                    ],
+                    "points": 2,
+                    "text": "Choose all correct answers. Nepal borders with:"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": true,
+                            "text": "Norway"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Russia"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Estonia"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Finland"
+                        }
+                    ],
+                    "points": 1,
+                    "text": "Choose all correct answers. Sweden borders with:"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": false,
+                            "text": "Mexico"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Belize"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Panama"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Nicaragua"
+                        }
+                    ],
+                    "points": 3,
+                    "text": "Choose all correct answers. Costa Rica borders with:"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": false,
+                            "text": "Brazil"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Bolivia"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Peru"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Argentina"
+                        }
+                    ],
+                    "points": 1,
+                    "text": "Choose all correct answers. Chile borders with:"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": true,
+                            "text": "South Africe"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Eswatini"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Namibia"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Madagascar"
+                        }
+                    ],
+                    "points": 2,
+                    "text": "Choose all correct answers. Lesotho borders with:"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": true,
+                            "text": "Syria"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Turkey"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Namibia"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Cyprus"
+                        }
+                    ],
+                    "points": 2,
+                    "text": "Choose all correct answers. Lebanon borders with:"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": true,
+                            "text": "Myanmar"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Russia"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "India"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Mongolia"
+                        }
+                    ],
+                    "points": 1,
+                    "text": "Choose all correct answers. China borders with:"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": true,
+                            "text": "China"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Russia"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Turkmenistan"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Afghanistan"
+                        }
+                    ],
+                    "points": 3,
+                    "text": "Choose all correct answers. Kyrgyzstan borders with:"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": false,
+                            "text": "China"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "India"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Myanmar"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Nepal"
+                        }
+                    ],
+                    "points": 2,
+                    "text": "Choose all correct answers. Bangladesh borders with:"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": true,
+                            "text": "Armenia"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Iran"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Kazakhstan"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Georgia"
+                        }
+                    ],
+                    "points": 3,
+                    "text": "Choose all correct answers. Azerbaijan borders with:"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": true,
+                            "text": "Egypt"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Libya"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Ethopia"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Oman"
+                        }
+                    ],
+                    "points": 1,
+                    "text": "Choose all correct answers. Sudan borders with:"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": true,
+                            "text": "Niger"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Ghana"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Libia"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Senegal"
+                        }
+                    ],
+                    "points": 2,
+                    "text": "Choose all correct answers. Mali borders with:"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": true,
+                            "text": "Swiss"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Austria"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Italy"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "France"
+                        }
+                    ],
+                    "points": 2,
+                    "text": "Choose all correct answers. Liechtenstein borders with:"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": false,
+                            "text": "Spain"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "France"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Austria"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "Italy"
+                        }
+                    ],
+                    "points": 1,
+                    "text": "Choose all correct answers. San Marino borders with:"
+                },
+                {
+                    "anwers": [
+                        {
+                            "is_correst": false,
+                            "text": "Saudi Arabia"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Kuwait"
+                        },
+                        {
+                            "is_correst": false,
+                            "text": "Qatar"
+                        },
+                        {
+                            "is_correst": true,
+                            "text": "None"
+                        }
+                    ],
+                    "points": 2,
+                    "text": "Choose all correct answers. Bahrain borders with:"
+                }
+            ]
+        }
+    ]
+}
