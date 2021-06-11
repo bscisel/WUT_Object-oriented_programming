@@ -272,16 +272,6 @@
                </widget>
               </item>
               <item>
-               <widget class="QPushButton" name="selectCategoryButton">
-                <property name="enabled">
-                 <bool>false</bool>
-                </property>
-                <property name="text">
-                 <string>Select</string>
-                </property>
-               </widget>
-              </item>
-              <item>
                <widget class="QPushButton" name="openFileButton">
                 <property name="text">
                  <string>Open file</string>
@@ -355,31 +345,8 @@
                   <property name="text">
                    <string>Categories</string>
                   </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="label_2">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="text">
-                   <string>Selected: </string>
-                  </property>
                   <property name="alignment">
-                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="selectedCategoryLabel">
-                  <property name="text">
-                   <string>None</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   <set>Qt::AlignCenter</set>
                   </property>
                  </widget>
                 </item>
@@ -407,6 +374,9 @@
                 </property>
                 <property name="layoutDirection">
                  <enum>Qt::LeftToRight</enum>
+                </property>
+                <property name="selectionMode">
+                 <enum>QAbstractItemView::MultiSelection</enum>
                 </property>
                </widget>
               </item>

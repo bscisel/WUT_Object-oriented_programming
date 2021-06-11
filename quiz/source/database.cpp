@@ -8,7 +8,7 @@ void to_json(json &j, const Answer &answer)
 
 void to_json(json &j, const Question *question)
 {
-    j = {{"anwers", question->get_answers()}};
+    j = {{"answers", question->get_answers()}};
     j["points"] = question->get_points();
     j["text"] = question->get_text();
 }

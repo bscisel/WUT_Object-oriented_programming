@@ -4,7 +4,6 @@ void to_json(json &j, const Saved_answer &saved_answer)
 {
     j["text"] = saved_answer.get_text();
     j["correct"] = saved_answer.is_correct();
-    j["user_answer"] = saved_answer.get_user_answer();
 }
 
 void to_json(json &j, const Answered_question &a_question)
@@ -65,19 +64,17 @@ bool Database_users::read_data()
                 for (auto &saved_answer : question["user_answers"])
                 {
                     user_answers.push_back(Saved_answer(
-                        Answer(saved_answer["text"], saved_answer["correct"]),
-                        saved_answer["user_answer"]));
+                        Answer(saved_answer["text"], saved_answer["correct"])));
                 }
                 questions.push_back(Answered_question(
                     Question(question["points"], question["text"], question["correct_count"]),
                     question["time"],
                     user_answers));
             }
-            user_sessions.push_back(Session(
-                session["start_time"],
-                session["session_time"],
-                session["points_scored"],
-                questions));
+            user_sessions.push_back(Session(session["start_time"],
+                                            session["session_time"],
+                                            session["points_scored"],
+                                            questions));
         }
         users.push_back(std::make_shared<User>(user["name"], user["points"], user_sessions));
     }

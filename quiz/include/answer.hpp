@@ -17,12 +17,8 @@ public:
 
 class Saved_answer : public Answer
 {
-    bool user_answer;
-
 public:
-    Saved_answer(const Answer &answer, bool user_answer)
-        : Answer(answer), user_answer(user_answer) {}
-    bool get_user_answer() const { return user_answer; };
+    Saved_answer(const Answer &answer) : Answer(answer) {}
 };
 
 #endif
