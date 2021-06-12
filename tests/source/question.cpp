@@ -39,8 +39,8 @@ TEST(question, answered_question)
     question1.add_answer("Odpowiedz D", true);
     const std::vector<Answer> &answers = question1.get_answers();
     std::vector<Saved_answer> user_answers;
-    user_answers.push_back(Saved_answer(answers[0]));
-    user_answers.push_back(Saved_answer(answers[2]));
+    user_answers.push_back(Saved_answer(answers[0], true));
+    user_answers.push_back(Saved_answer(answers[2], true));
     Answered_question a_question1(question1, 8234, user_answers);
     EXPECT_EQ(a_question1.get_time(), 8234);
     EXPECT_EQ(a_question1.get_time(), 8234);

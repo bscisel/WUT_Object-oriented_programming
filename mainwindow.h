@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QListWidget>
+#include <QLabel>
 #include "database.hpp"
 #include "database_users.hpp"
 #include "session.hpp"
@@ -40,6 +41,8 @@ private slots:
 
     // 3 page
     void on_nextQuestionButton_clicked();
+    void on_answersListWidget_itemClicked(QListWidgetItem *item);
+    void on_backToMainMenuButton_clicked();
     
 private:
     Ui::MainWindow *ui;
@@ -49,6 +52,7 @@ private:
     Session *active_session;
     std::shared_ptr<User> get_pointer_to_active_user() const;
     std::shared_ptr<Category> get_pointer_to_category(QListWidgetItem *item) const;
+    Answered_question get_answered_question(QListWidgetItem *item) const;
     
     void set_user_as_active(QListWidgetItem *user_item);
     
@@ -59,8 +63,11 @@ private:
     void add_category_to_list(const std::shared_ptr<Category> &category, const QString &name);
 
     void start_game();
-    void display_question();
-    void next_question();
+    void display_next_question();
+    void display_result(const Session *session);
+    void display_answered_question(Answered_question question);
+    void display_answer(QLabel *mark, QLabel *text, Saved_answer answer);
+    void save_question();
 };
 
 #endif
