@@ -25,10 +25,10 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent),
 
 MainWindow::~MainWindow()
 {
-    delete ui;
     delete database;
     database_users->save_to_file();
     delete database_users;
+    delete ui;
     std::cout << "DESTRUCTOR" << std::endl;
 }
 

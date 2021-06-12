@@ -28,6 +28,8 @@ Session::~Session() {
 void Session::end_session()
 {
     session_time = time() - start_time;
+    randomly_selected_questions.clear();
+    current_question_index = 0;
 }
 
 void Session::draw_questions(const std::vector<std::shared_ptr<Category>> &selected_categories,
