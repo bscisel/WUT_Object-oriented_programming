@@ -4,21 +4,21 @@
             "name": "Formula 1",
             "questions": [
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Eau Rouge"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Bridge"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Becketts"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Stowe"
                         }
                     ],
@@ -26,21 +26,21 @@
                     "text": "At which corner did Michael Schumacher break his leg in 1999?"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Missing front wing"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Faulty gearbox"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "New steering wheel"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Missing wheel"
                         }
                     ],
@@ -48,21 +48,21 @@
                     "text": "Michael Schumacher made a late pitstop in the 1999 French Grand Prix, but why did he pit?"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "S-Wing"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "T-Wing"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "X-Wing"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "V-Wing"
                         }
                     ],
@@ -70,21 +70,21 @@
                     "text": "In the Argentinian Grand Prix of 1997 the Tyrrells sported a radical piece of bodywork: what was it called?"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "His team mate"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "A stray horse"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "A spectator"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "His brother"
                         }
                     ],
@@ -92,21 +92,21 @@
                     "text": " Who had Ralf Schumacher collided with that upset him so much in the 1997 Luxembourg Grand Prix?"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Puncture"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Blown engine"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Collision"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Disqualified"
                         }
                     ],
@@ -114,21 +114,21 @@
                     "text": "In the 2000 United States Grand Prix, Mika Hakkinen was forced to retire after chasing hard. Why?"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Gaston Mazzacane"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Ricardo Zonta"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Jarno Trulli"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Marc Gene"
                         }
                     ],
@@ -136,21 +136,21 @@
                     "text": "In the 2000 Belgian Grand Prix there was a backmarker between Mika Hakkinen and Michael Schumacher as Mika made his stunning overtaking move: who was he?"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Luca Badoer"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Mika Salo"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Tarso Marques"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Rubens Barrichello"
                         }
                     ],
@@ -158,21 +158,21 @@
                     "text": "Which Ferrari stand-in moved over to allow Irvine to win the 1999 German Grand Prix?"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Enrique Bernoldi"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Giancarlo Fisichella"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Tarso Marques"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Jos Verstappen"
                         }
                     ],
@@ -180,21 +180,21 @@
                     "text": "In the 2001 Brazilian Grand Prix, which driver crashed into Juan Pablo Montoya to cost Montoya an almost certain victory?"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Arrows"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Jordan"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Minardi"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Sauber"
                         }
                     ],
@@ -202,21 +202,21 @@
                     "text": "Which team scored a fabulous debut victory followed by a second place in the Belgian Grand Prix of 1998?"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Michael Schumacher"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Mika Hakkinen"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Rubens Barrichello"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "David Coulthard"
                         }
                     ],
@@ -224,21 +224,21 @@
                     "text": "Who qualified for the pole in the 2001 Monaco Grand Prix?"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Giovanni Lavaggi"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Esteban Tuero"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Ricardo Rosset"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Stephan Sarrazin"
                         }
                     ],
@@ -246,21 +246,21 @@
                     "text": "Which driver made a one race debut in 1999 with Minardi?"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Steering wheel warning lights"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Taller cars"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Slimmer cars"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Banned active suspension"
                         }
                     ],
@@ -268,21 +268,21 @@
                     "text": "In 1998 major rule changes were implemented. Grooved tyres was one, what was the other?"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Gerhard Berger"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Mika Hakkinen"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Nicola Larini"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Jean Alesi"
                         }
                     ],
@@ -290,21 +290,21 @@
                     "text": "Which driver ran out of fuel in the 1997 Australian Grand Prix?"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Arrows"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Benetton"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Jordan"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Ferrari"
                         }
                     ],
@@ -312,21 +312,21 @@
                     "text": " In the 1999 Italian Grand Prix a car was ransacked by spectators after it had crashed. Which team owned that car?"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Johnny Herbert"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Eddie Irvine"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Jarno Trulli"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Rubens Barrichello"
                         }
                     ],
@@ -334,21 +334,21 @@
                     "text": "Who finished third in the 1999 European Grand Prix?"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "He raced without underwear"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "He had a broken hand"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "He was wearing someone elses helmet"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "His view was obstructed"
                         }
                     ],
@@ -356,21 +356,21 @@
                     "text": "Why was the Monaco Grand Prix in 1996 slightly bizarre for David Coulthard?"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "French GP"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Brazilian GP"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Italian GP"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "German GP"
                         }
                     ],
@@ -378,21 +378,21 @@
                     "text": "At which race in 1998 was Jan Magnussen replaced by Jos Verstappen at Stewart?"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "3"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "4"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "2"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "5"
                         }
                     ],
@@ -400,21 +400,21 @@
                     "text": "How many cars stalled on the grid in the 2001 Austrian Grand Prix?"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Mercedes"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Peugeot"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Ferrari"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Honda"
                         }
                     ],
@@ -427,21 +427,21 @@
             "name": "Geography - borders",
             "questions": [
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Russia"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Ukraine"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Gemrnay"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Slovenia"
                         }
                     ],
@@ -449,21 +449,21 @@
                     "text": "Choose all correct answers. Poland borders with:"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Turkey"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Ukraine"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Slovakia"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Greece"
                         }
                     ],
@@ -471,21 +471,21 @@
                     "text": "Choose all correct answers. Bulgaria borders with:"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Vietnam"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Laos"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Malaysia"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Papua New Guinea"
                         }
                     ],
@@ -493,21 +493,21 @@
                     "text": "Choose all correct answers. Indonesia borders with:"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Angola"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Kenya"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Tanzania"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Zimbabwe"
                         }
                     ],
@@ -515,21 +515,21 @@
                     "text": "Choose all correct answers. Zambia borders with:"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Bhutan"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Tajikistan"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "India"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Pakistan"
                         }
                     ],
@@ -537,21 +537,21 @@
                     "text": "Choose all correct answers. Nepal borders with:"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Norway"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Russia"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Estonia"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Finland"
                         }
                     ],
@@ -559,21 +559,21 @@
                     "text": "Choose all correct answers. Sweden borders with:"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Mexico"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Belize"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Panama"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Nicaragua"
                         }
                     ],
@@ -581,21 +581,21 @@
                     "text": "Choose all correct answers. Costa Rica borders with:"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Brazil"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Bolivia"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Peru"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Argentina"
                         }
                     ],
@@ -603,21 +603,21 @@
                     "text": "Choose all correct answers. Chile borders with:"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "South Africe"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Eswatini"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Namibia"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Madagascar"
                         }
                     ],
@@ -625,21 +625,21 @@
                     "text": "Choose all correct answers. Lesotho borders with:"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Syria"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Turkey"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Namibia"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Cyprus"
                         }
                     ],
@@ -647,21 +647,21 @@
                     "text": "Choose all correct answers. Lebanon borders with:"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Myanmar"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Russia"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "India"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Mongolia"
                         }
                     ],
@@ -669,21 +669,21 @@
                     "text": "Choose all correct answers. China borders with:"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "China"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Russia"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Turkmenistan"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Afghanistan"
                         }
                     ],
@@ -691,21 +691,21 @@
                     "text": "Choose all correct answers. Kyrgyzstan borders with:"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "China"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "India"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Myanmar"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Nepal"
                         }
                     ],
@@ -713,21 +713,21 @@
                     "text": "Choose all correct answers. Bangladesh borders with:"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Armenia"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Iran"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Kazakhstan"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Georgia"
                         }
                     ],
@@ -735,21 +735,21 @@
                     "text": "Choose all correct answers. Azerbaijan borders with:"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Egypt"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Libya"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Ethopia"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Oman"
                         }
                     ],
@@ -757,21 +757,21 @@
                     "text": "Choose all correct answers. Sudan borders with:"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Niger"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Ghana"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Libia"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Senegal"
                         }
                     ],
@@ -779,21 +779,21 @@
                     "text": "Choose all correct answers. Mali borders with:"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Swiss"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Austria"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Italy"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "France"
                         }
                     ],
@@ -801,21 +801,21 @@
                     "text": "Choose all correct answers. Liechtenstein borders with:"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Spain"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "France"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Austria"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "Italy"
                         }
                     ],
@@ -823,21 +823,21 @@
                     "text": "Choose all correct answers. San Marino borders with:"
                 },
                 {
-                    "anwers": [
+                    "answers": [
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Saudi Arabia"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Kuwait"
                         },
                         {
-                            "is_correst": false,
+                            "is_correct": false,
                             "text": "Qatar"
                         },
                         {
-                            "is_correst": true,
+                            "is_correct": true,
                             "text": "None"
                         }
                     ],

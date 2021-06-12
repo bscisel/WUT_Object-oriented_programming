@@ -21,9 +21,9 @@ public:
         user_id = ++user_counter;
     };
     ~User();
+    void add_points(float session_result) { points += session_result; }
     unsigned get_user_id() const { return user_id; } // potrzebne jest id??
     const std::string &get_name() const { return name; }
-    void add_points(float session_result) { points += session_result; }
     float get_points() const { return points; }
     void add_session(Session * session);
     const std::vector<Session *> &get_user_sessions() const { return user_sessions; }

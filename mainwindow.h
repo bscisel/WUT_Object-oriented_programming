@@ -35,13 +35,14 @@ private slots:
     // 2 page
     void on_openFileButton_clicked();
     void on_startButton_clicked();
+    void on_addCategoryButton_clicked();
     void on_cancelButton_clicked();
     void on_exitButton_2_clicked();
     void on_categoriesListWidget_itemSelectionChanged();
 
     // 3 page
     void on_nextQuestionButton_clicked();
-    void on_answersListWidget_itemClicked(QListWidgetItem *item);
+    void on_questionsListWidget_itemClicked(QListWidgetItem *item);
     void on_backToMainMenuButton_clicked();
     
 private:

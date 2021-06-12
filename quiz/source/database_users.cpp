@@ -19,9 +19,11 @@ void to_json(json &j, const Answered_question &a_question)
 void to_json(json &j, const Session *session)
 {
     j = {{"questions", session->get_answered_questions()}};
+    j["selected_categories_names"] = session->get_selected_categories_names();
     j["start_time"] = session->get_start_time();
     j["session_time"] = session->get_session_time();
     j["points_scored"] = session->get_points_scored();
+    j["points_to_score"] = session->get_points_to_score();
 }
 
 void to_json(json &j, const std::shared_ptr<User> &user)
@@ -77,7 +79,9 @@ bool Database_users::read_data()
                 session["start_time"],
                 session["session_time"],
                 session["points_scored"],
-                questions));
+                session["points_to_score"],
+                questions,
+                session["selected_categories_names"]));
         }
         users.push_back(std::make_shared<User>(user["name"], user["points"], user_sessions));
     }

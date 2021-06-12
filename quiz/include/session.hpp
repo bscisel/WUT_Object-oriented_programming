@@ -15,18 +15,26 @@ private:
     uint64_t start_time;
     uint64_t session_time;
     float points_scored{0.f};
+    uint16_t points_to_score{0};
     std::vector<Answered_question> questions;
     std::vector<std::string> selected_categories_names;
     std::vector<Question *> randomly_selected_questions;
-    uint8_t current_question_index = 0;
-    uint16_t points_to_score = 0;
+    uint8_t current_question_index{0};
 
 public:
-    Session(uint64_t start_time = {0},
-            uint64_t session_time = {0},
-            float points_scored = {0.f},
-            std::vector<Answered_question> questions = {},
-            std::vector<std::string> selected_categories_names = {});
+    Session();
+    Session(uint64_t start_time,
+            uint64_t session_time,
+            float points_scored,
+            uint16_t points_to_score,
+            std::vector<Answered_question> questions,
+            std::vector<std::string> selected_categories_names)
+        : start_time(start_time),
+          session_time(session_time),
+          points_scored(points_scored),
+          points_to_score(points_to_score),
+          questions(questions),
+          selected_categories_names(selected_categories_names) {}
     ~Session();
     void end_session();
     uint64_t get_start_time() const { return start_time; }

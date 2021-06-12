@@ -289,6 +289,13 @@
                </widget>
               </item>
               <item>
+               <widget class="QPushButton" name="addCategoryButton">
+                <property name="text">
+                 <string>Add category</string>
+                </property>
+               </widget>
+              </item>
+              <item>
                <widget class="QPushButton" name="cancelButton">
                 <property name="text">
                  <string>Cancel</string>
@@ -613,7 +620,7 @@ przetłumacz to ktoś pls</string>
              </layout>
             </item>
             <item>
-             <widget class="QListWidget" name="answersListWidget">
+             <widget class="QListWidget" name="questionsListWidget">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
                 <horstretch>0</horstretch>

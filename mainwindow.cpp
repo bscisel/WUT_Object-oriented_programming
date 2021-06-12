@@ -3,6 +3,7 @@
 #include <QFileDialog>
 #include "mainwindow.h"
 #include "adduserdialog.h"
+#include "addcategorydialog.h"
 #include "./ui_mainwindow.h"
 
 Q_DECLARE_METATYPE(std::shared_ptr<User>)
@@ -93,6 +94,20 @@ void MainWindow::on_startButton_clicked()
     start_game();
 }
 
+void MainWindow::on_addCategoryButton_clicked()
+{
+    AddCategoryDialog dialog(this);
+    if (dialog.exec())
+    {
+        QString entered_category_name = dialog.get_name_from_input();
+        if (!entered_category_name.isEmpty())
+        {
+            std::shared_ptr<Category> pointer_to_category = database->add_category(entered_category_name.toStdString());
+            add_category_to_list(pointer_to_category, entered_category_name);
+        }
+    }
+}
+
 void MainWindow::on_cancelButton_clicked()
 {
     ui->stackedWidget->setCurrentIndex(0);
@@ -128,7 +143,7 @@ void MainWindow::on_nextQuestionButton_clicked() {
     }
 }
 
-void MainWindow::on_answersListWidget_itemClicked(QListWidgetItem *item) {
+void MainWindow::on_questionsListWidget_itemClicked(QListWidgetItem *item) {
     display_answered_question(get_answered_question(item));
 }
 
@@ -234,18 +249,18 @@ void MainWindow::display_next_question()
 void MainWindow::display_result(const Session *session) {
     ui->stackedWidget->setCurrentIndex(3);
     ui->pointsLabel->setText(QString::number(session->get_points_scored()) + QString("/") + QString::number(session->get_points_to_score()));
-    ui->answersListWidget->clear();
+    ui->questionsListWidget->clear();
     uint8_t i = 1;
     for (auto &answered_question : session->get_answered_questions()) {
         QListWidgetItem *new_question_on_list = new QListWidgetItem(QString("Question ") + QString::number(i));
         QVariant data;
         data.setValue(answered_question);
         new_question_on_list->setData(Qt::UserRole, data);
-        ui->answersListWidget->addItem(new_question_on_list);
+        ui->questionsListWidget->addItem(new_question_on_list);
         i++;
     }
-    on_answersListWidget_itemClicked(ui->answersListWidget->item(0));
-    ui->answersListWidget->setCurrentRow(0);
+    on_questionsListWidget_itemClicked(ui->questionsListWidget->item(0));
+    ui->questionsListWidget->setCurrentRow(0);
 }
 
 void MainWindow::display_answered_question(Answered_question question)

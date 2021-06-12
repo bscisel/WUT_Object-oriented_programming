@@ -10,6 +10,7 @@ TEST(session, new_session)
     std::this_thread::sleep_for(std::chrono::milliseconds(200));
     session.end_session();
     EXPECT_GE(session.get_session_time(), 200);
+    EXPECT_LE(session.get_session_time(), 300);
 }
 
 TEST(session, new_session2)
