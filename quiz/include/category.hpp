@@ -6,8 +6,6 @@
 #include <string>
 #include <vector>
 
-using json = nlohmann::json;
-
 class Category
 {
 private:
@@ -17,7 +15,7 @@ private:
     std::vector<Question *> questions;
 
 public:
-    Category(const std::string &name, std::vector<Question *> questions = {}) // tu przez wartosc?
+    Category(const std::string &name, std::vector<Question *> questions = {})
         : name(name),
           questions(questions)
     {
@@ -30,7 +28,7 @@ public:
     const std::vector<Question *> &get_questions() const { return questions; }
     void add_question(Question *question) { questions.push_back(question); }
     int get_questions_number() const { return questions.size(); }
-    static unsigned get_categories_number() { return category_counter; } // nie w database?
+    static unsigned get_categories_number() { return category_counter; }
 };
 
 #endif

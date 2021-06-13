@@ -34,7 +34,7 @@ class Answered_question : public Question
 private:
     uint64_t time;
     std::vector<Saved_answer> user_answers;
-    float points_scored;
+    float points_scored{0.f};
 
 public:
     Answered_question() = default;

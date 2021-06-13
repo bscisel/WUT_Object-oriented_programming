@@ -11,17 +11,18 @@ Session::Session()
     start_time = time();
 }
 
-Session::~Session()
-{
-    for (auto &question : randomly_selected_questions)
-        delete question;
-}
-
 void Session::end_session()
 {
     session_time = time() - start_time;
     randomly_selected_questions.clear();
     current_question_index = 0;
+}
+
+void Session::push_question(Answered_question question)
+{
+    points_scored += question.count_points();
+    questions.push_back(question);
+    current_question_index++;
 }
 
 void Session::draw_questions(const std::vector<std::shared_ptr<Category>> &selected_categories,
