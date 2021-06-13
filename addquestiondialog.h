@@ -16,6 +16,9 @@ public:
     explicit AddQuestionDialog(QWidget *parent = nullptr);
     ~AddQuestionDialog();
     QString get_question_text_from_input();
+    QList<QString> get_answers_text();
+    QList<bool> get_answers_correct();
+    int get_number_of_points();
 
 private slots:
     void on_buttonBox_accepted();

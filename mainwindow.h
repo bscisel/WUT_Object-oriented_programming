@@ -29,6 +29,7 @@ private slots:
     void on_addUserButton_clicked();
     void on_exitButton_clicked();
     void on_newGameButton_clicked();
+    void on_statisticsButton_clicked();
     void on_usersListWidget_itemDoubleClicked(QListWidgetItem *user_item);
     void on_usersListWidget_itemSelectionChanged();
     
@@ -36,6 +37,8 @@ private slots:
     void on_openFileButton_clicked();
     void on_startButton_clicked();
     void on_addCategoryButton_clicked();
+    void on_addQuestionButton_clicked();
+    void on_saveToFileButton_clicked();
     void on_cancelButton_clicked();
     void on_exitButton_2_clicked();
     void on_categoriesListWidget_itemSelectionChanged();
@@ -44,14 +47,22 @@ private slots:
     void on_nextQuestionButton_clicked();
     void on_questionsListWidget_itemClicked(QListWidgetItem *item);
     void on_backToMainMenuButton_clicked();
+    void on_goToStatisticsButton_clicked();
     
+    // 4 page
+    void on_showButton_clicked();
+    void on_backButton_clicked();
+    void on_sessionResultsWidget_itemSelectionChanged();
+
+
 private:
     Ui::MainWindow *ui;
     Database *database;
     Database_users *database_users;
     QListWidgetItem *active_user;
     Session *active_session;
-    std::shared_ptr<User> get_pointer_to_active_user() const;
+    bool came_from_statistics;
+    std::shared_ptr<User> get_pointer_to_user(const QListWidgetItem *user) const;
     std::shared_ptr<Category> get_pointer_to_category(QListWidgetItem *item) const;
     Answered_question get_answered_question(QListWidgetItem *item) const;
     
@@ -59,9 +70,11 @@ private:
     
     void load_users_into_widgetlist();
     void read_categories_from_file(QString file_name);
-    
+    void save_database_to_file();
+
     void add_user_to_list(const std::shared_ptr<User> &user, const QString &name);
     void add_category_to_list(const std::shared_ptr<Category> &category, const QString &name);
+    void add_question();
 
     void start_game();
     void display_next_question();
@@ -69,6 +82,8 @@ private:
     void display_answered_question(Answered_question question);
     void display_answer(QLabel *mark, QLabel *text, Saved_answer answer);
     void save_question();
+    void show_statistics_page(const std::shared_ptr<User> &user);
+    uint64_t count_questions_in_selected_categories();
 };
 
 #endif

@@ -58,3 +58,17 @@ Question *Session::get_current_question()
 {
     return randomly_selected_questions[current_question_index];
 }
+
+std::string Session::get_formatted_start_date() const {
+    std::stringstream text;
+    time_t time = static_cast<time_t>(start_time / 1000);
+    text << std::put_time(std::localtime(&time), "%Y-%m-%d %X");
+    return text.str();
+}
+
+std::string Session::get_formatted_session_time() const {
+    std::stringstream text;
+    float time = static_cast<float>(session_time) / 1000; 
+    text << std::fixed << std::setprecision(2) << time << "s";
+    return text.str();
+}

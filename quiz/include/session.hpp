@@ -5,6 +5,7 @@
 #include "question.hpp"
 #include <vector>
 #include <chrono>
+#include <iomanip>
 #include <algorithm>
 #include <memory>
 #include <random>
@@ -52,6 +53,8 @@ public:
     Question *get_current_question();
     bool next_question_exist() { return current_question_index < randomly_selected_questions.size() ? true : false; }
     uint16_t get_points_to_score() const { return points_to_score; }
+    std::string get_formatted_start_date() const;
+    std::string get_formatted_session_time() const;
 };
 
 #endif
