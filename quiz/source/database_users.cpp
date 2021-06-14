@@ -13,7 +13,7 @@ void to_json(json &j, const Answered_question &a_question)
     j["points"] = a_question.get_points();
     j["text"] = a_question.get_text();
     j["correct_count"] = a_question.get_correct_answers_number();
-    j["time"] = a_question.get_time();
+    j["points_scored"] = a_question.get_points_scored();
 }
 
 void to_json(json &j, const Session *session)
@@ -72,8 +72,7 @@ bool Database_users::read_data()
                 }
                 questions.push_back(Answered_question(
                     Question(question["points"], question["text"], question["correct_count"]),
-                    question["time"],
-                    user_answers));
+                    user_answers, question["points_scored"]));
             }
             user_sessions.push_back(new Session(
                 session["start_time"],

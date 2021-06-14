@@ -29,8 +29,8 @@ TEST(session, push_questions)
 
     std::vector<Question *> questions = category.get_questions();
     Session session;
-    session.push_question(Answered_question(*questions[0], 10421, {Saved_answer(questions[0]->get_answers()[1], true)}));
-    session.push_question(Answered_question(*questions[1], 13308));
+    session.push_question(Answered_question(*questions[0], {Saved_answer(questions[0]->get_answers()[1], true)}));
+    session.push_question(Answered_question(*questions[1]));
 
     EXPECT_EQ(session.get_answered_questions()[0].get_text(), "Pytanie jeden?");
     EXPECT_EQ(session.get_answered_questions()[0].get_answers()[1].get_text(), "Odpowiedz 2");
@@ -52,10 +52,10 @@ TEST(session, count_points)
     Session session;
     EXPECT_EQ(session.get_points_scored(), 0);
     EXPECT_EQ(session.get_current_question_index(), 0);
-    session.push_question(Answered_question(*questions[0], 10421, {Saved_answer(questions[0]->get_answers()[1], true)}));
+    session.push_question(Answered_question(*questions[0], {Saved_answer(questions[0]->get_answers()[1], true)}));
     EXPECT_EQ(session.get_points_scored(), 0);
     EXPECT_EQ(session.get_current_question_index(), 1);
-    session.push_question(Answered_question(*questions[1], 13308, {Saved_answer(questions[1]->get_answers()[0], true)}));
+    session.push_question(Answered_question(*questions[1], {Saved_answer(questions[1]->get_answers()[0], true)}));
     EXPECT_EQ(session.get_points_scored(), 2);
     EXPECT_EQ(session.get_current_question_index(), 2);
 }
@@ -74,8 +74,8 @@ TEST(session, read_session)
 
     std::vector<Question *> questions = category.get_questions();
     std::vector<Answered_question> answered_questions;
-    answered_questions.push_back(Answered_question(*questions[0], 10421, {Saved_answer(questions[0]->get_answers()[1], true)}));
-    answered_questions.push_back(Answered_question(*questions[1], 13308, {Saved_answer(questions[1]->get_answers()[0], true)}));
+    answered_questions.push_back(Answered_question(*questions[0], {Saved_answer(questions[0]->get_answers()[1], true)}));
+    answered_questions.push_back(Answered_question(*questions[1], {Saved_answer(questions[1]->get_answers()[0], true)}));
 
     std::vector<std::string> cat_names = {category.get_name()};
     Session session(uint64_t(1623580199), uint64_t(250), 2, 5, answered_questions, cat_names);
@@ -99,7 +99,7 @@ TEST(session, select_questions)
     EXPECT_EQ(session.get_current_question_text(), "Pytanie jeden?");
     EXPECT_EQ(session.get_current_question_answers_text()[0], "Odpowiedz 1");
     EXPECT_TRUE(session.next_question_exist());
-    session.push_question(Answered_question(*question, 10421, {Saved_answer(question->get_answers()[1], true)}));
+    session.push_question(Answered_question(*question, {Saved_answer(question->get_answers()[1], true)}));
     EXPECT_FALSE(session.next_question_exist());
     session.end_session();
 }

@@ -403,7 +403,7 @@ void MainWindow::save_question()
     user_answers.push_back(Saved_answer(answers[1], ui->answer2Button->isChecked()));
     user_answers.push_back(Saved_answer(answers[2], ui->answer3Button->isChecked()));
     user_answers.push_back(Saved_answer(answers[3], ui->answer4Button->isChecked()));
-    active_session->push_question(Answered_question(*current_question, 0, user_answers));
+    active_session->push_question(Answered_question(*current_question, user_answers));
     std::cout << active_session->get_points_scored() << std::endl;
 }
 

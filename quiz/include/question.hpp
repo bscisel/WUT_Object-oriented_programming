@@ -32,7 +32,6 @@ public:
 class Answered_question : public Question
 {
 private:
-    uint64_t time;
     std::vector<Saved_answer> user_answers;
     float points_scored{0.f};
 
@@ -40,14 +39,14 @@ public:
     Answered_question() = default;
     ~Answered_question() = default;
     Answered_question(const Answered_question &) = default;
-    Answered_question(const Question &question, uint64_t time,
-                      std::vector<Saved_answer> user_answers = {})
+    Answered_question(const Question &question,
+                      std::vector<Saved_answer> user_answers = {},
+                      float points_scored = {0})
         : Question(question),
-          time(time),
-          user_answers(user_answers) {}
+          user_answers(user_answers),
+          points_scored(points_scored) {}
     const std::vector<Saved_answer> &get_users_answers() const { return user_answers; }
-    uint64_t get_time() const { return time; }
-    float get_points_scored () const { return points_scored; }
+    float get_points_scored() const { return points_scored; }
     unsigned short get_user_answers_number() const { return user_answers.size(); }
     float count_points();
 };

@@ -39,8 +39,8 @@ TEST(user, add_session)
     std::vector<Question *> questions = category.get_questions();
     Session *session = new Session();
 
-    session->push_question(Answered_question(*questions[0], 10421, {Saved_answer(questions[0]->get_answers()[1], true)}));
-    session->push_question(Answered_question(*questions[1], 13308, {Saved_answer(questions[1]->get_answers()[0], true)}));
+    session->push_question(Answered_question(*questions[0], {Saved_answer(questions[0]->get_answers()[1], true)}));
+    session->push_question(Answered_question(*questions[1], {Saved_answer(questions[1]->get_answers()[0], true)}));
     session->end_session();
     user.add_session(session);
     EXPECT_EQ(user.get_points(), 2);

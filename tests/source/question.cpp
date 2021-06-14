@@ -56,8 +56,7 @@ TEST(question, answered_question)
     std::vector<Saved_answer> user_answers;
     user_answers.push_back(Saved_answer(answers[0], true));
     user_answers.push_back(Saved_answer(answers[3], true));
-    Answered_question a_question1(question1, 8234, user_answers);
-    EXPECT_EQ(a_question1.get_time(), 8234);
+    Answered_question a_question1(question1, user_answers);
     EXPECT_EQ(a_question1.get_all_answers_number(), question1.get_all_answers_number());
     EXPECT_EQ(a_question1.get_user_answers_number(), 2);
     EXPECT_EQ(a_question1.get_correct_answers_number(), 2);
