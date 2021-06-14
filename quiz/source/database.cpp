@@ -28,7 +28,7 @@ bool Database::open_file(std::string f_name)
 {
     if (f_name.empty())
         f_name = file_name;
-
+    file_name = f_name;
     std::ifstream input_file(f_name);
     if (input_file)
     {

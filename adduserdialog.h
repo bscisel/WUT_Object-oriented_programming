@@ -15,6 +15,10 @@ class AddUserDialog : public QDialog
 public:
     explicit AddUserDialog(QWidget *parent = nullptr);
     ~AddUserDialog();
+    /**
+     * @brief Get the name for a new User to be created from user input
+     * @return QString user name
+     */
     QString get_name_from_input();
 
 private slots:

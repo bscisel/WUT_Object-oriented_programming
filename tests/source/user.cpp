@@ -7,10 +7,10 @@ TEST(user, create_user)
 {
     User user("Natalia");
     EXPECT_EQ(user.get_name(), "Natalia");
-    EXPECT_EQ(user.get_user_id(), 1);
+    EXPECT_EQ(user.get_user_id(), 3);
     EXPECT_EQ(user.get_points(), 0);
     User user2("Bartek");
-    EXPECT_EQ(user2.get_user_id(), 2);
+    EXPECT_EQ(user2.get_user_id(), 4);
 }
 
 TEST(user, add_points)

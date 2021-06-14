@@ -9,7 +9,6 @@ AddUserDialog::AddUserDialog(QWidget *parent) : QDialog(parent),
 
 AddUserDialog::~AddUserDialog()
 {
-    qDebug("On faktycznie znika");
     delete ui;
 }
 

@@ -58,7 +58,6 @@ TEST(question, answered_question)
     user_answers.push_back(Saved_answer(answers[3], true));
     Answered_question a_question1(question1, user_answers);
     EXPECT_EQ(a_question1.get_all_answers_number(), question1.get_all_answers_number());
-    EXPECT_EQ(a_question1.get_user_answers_number(), 2);
     EXPECT_EQ(a_question1.get_correct_answers_number(), 2);
     a_question1.count_points();
     EXPECT_EQ(a_question1.get_points_scored(), 2);

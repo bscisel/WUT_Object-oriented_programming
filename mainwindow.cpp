@@ -23,7 +23,6 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent),
         database_users->read_data();
         load_users_into_widgetlist();
     }
-    std::cout << database_users->get_users_number() << std::endl;
 }
 
 MainWindow::~MainWindow()
@@ -32,7 +31,6 @@ MainWindow::~MainWindow()
     database_users->save_to_file();
     delete database_users;
     delete ui;
-    std::cout << "DESTRUCTOR" << std::endl;
 }
 
 ////////////////////////////////////////////////////
@@ -51,7 +49,7 @@ void MainWindow::on_addUserButton_clicked()
     if (dialog.exec())
     {
         QString entered_user_name = dialog.get_name_from_input();
-        if (!entered_user_name.isEmpty()) // trzeba to zrobic lepiej
+        if (!entered_user_name.isEmpty())
         {
             std::shared_ptr<User> pointer_to_user = database_users->add_user(entered_user_name.toStdString());
             add_user_to_list(pointer_to_user, entered_user_name);
@@ -252,7 +250,7 @@ void MainWindow::read_categories_from_file(QString file_name)
         auto i = categories.size();
         database->read_data();
         for (; i != categories.size(); i++)
-        { // -_-
+        {
             add_category_to_list(categories[i], QString::fromStdString(categories[i]->get_name()));
         }
     }
@@ -404,7 +402,6 @@ void MainWindow::save_question()
     user_answers.push_back(Saved_answer(answers[2], ui->answer3Button->isChecked()));
     user_answers.push_back(Saved_answer(answers[3], ui->answer4Button->isChecked()));
     active_session->push_question(Answered_question(*current_question, user_answers));
-    std::cout << active_session->get_points_scored() << std::endl;
 }
 
 void MainWindow::show_statistics_page(const std::shared_ptr<User> &user)

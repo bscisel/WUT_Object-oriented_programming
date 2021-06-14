@@ -15,6 +15,10 @@ class AddCategoryDialog : public QDialog
 public:
     explicit AddCategoryDialog(QWidget *parent = nullptr);
     ~AddCategoryDialog();
+    /**
+     * @brief Get the text from user input
+     * @return QString Category name
+     */
     QString get_name_from_input();
 
 private slots:
