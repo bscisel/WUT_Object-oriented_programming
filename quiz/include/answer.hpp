@@ -3,25 +3,58 @@
 
 #include <string>
 
+/**
+ * @brief Class Answer corresponds to an answer for a multiple-choice question.
+ * Each answer has it's content and bool value denoting it's correctness.
+ */
 class Answer
 {
 protected:
-    std::string text;
-    bool correct;
+    std::string text; /**< The content of the answer. */
+    bool correct; /**< Correctness marker. */
 
 public:
+    /**
+     * @brief Construct a new Answer object
+     * @param text
+     * @param is_correct
+     */
     Answer(const std::string &text, bool is_correct) : text(text), correct(is_correct) {}
+    /**
+     * @brief Get the text object
+     * @return const std::string&
+     */
     const std::string &get_text() const { return text; };
+    /**
+     * @brief Get if answer is correct
+     * @return true
+     * @return false
+     */
     bool is_correct() const { return correct; };
 };
 
+/**
+ * @brief Saved_answer class is an object derrived from a base class Answer extended by
+ * user's mark for the answer (true or false).
+ *
+ */
 class Saved_answer : public Answer
 {
-    bool user_answer;
+    bool user_answer; /**< Saves if user marked the answer as correct */
 
 public:
+    /**
+     * @brief Construct a new Saved_answer object
+     * @param answer
+     * @param user_answer
+     */
     Saved_answer(const Answer &answer, bool user_answer)
         : Answer(answer), user_answer(user_answer) {}
+    /**
+     * @brief Get the user mark
+     * @return true
+     * @return false
+     */
     bool get_user_answer() const { return user_answer; };
 };
 

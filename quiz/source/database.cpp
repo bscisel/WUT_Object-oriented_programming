@@ -72,7 +72,7 @@ bool Database::save_to_file(std::string f_name)
     return false;
 }
 
-std::shared_ptr<Category> Database::add_category(const std::string &name, std::vector<Question *> questions) // przez wartosc?
+std::shared_ptr<Category> Database::add_category(const std::string &name, std::vector<Question *> questions)
 {
     std::shared_ptr<Category> pointer_to_category {std::make_shared<Category>(name, questions)};
     categories.push_back(pointer_to_category);
