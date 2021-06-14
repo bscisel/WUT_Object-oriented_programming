@@ -1,0 +1,4 @@
+<map id="Answered_question" name="Answered_question">
+<area shape="rect" id="node1" title="Class Answered_question is derrived from class Question, extended by a container of user&#39;s answers to..." alt="" coords="5,80,155,107"/>
+<area shape="rect" id="node2" href="$classQuestion.html" title="class Question includes the text of the question, number of points to score, containers of Answers ob..." alt="" coords="40,5,120,32"/>
+</map>
