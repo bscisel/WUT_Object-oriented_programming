@@ -63,6 +63,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classAnswered__question-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Answered_question Class Reference</div>  </div>
@@ -100,7 +101,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae2c79c746346f88212fc7aae55c51875"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4bc8523cf98d97b0fbd8a6a943ea4f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnswered__question.html#ad4bc8523cf98d97b0fbd8a6a943ea4f1">Answered_question</a> (const <a class="el" href="classAnswered__question.html">Answered_question</a> &amp;)=default</td></tr>
 <tr class="separator:ad4bc8523cf98d97b0fbd8a6a943ea4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a086b795df427d1b09abb14b774495342"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnswered__question.html#a086b795df427d1b09abb14b774495342">Answered_question</a> (const <a class="el" href="classQuestion.html">Question</a> &amp;question, std::vector&lt; <a class="el" href="classSaved__answer.html">Saved_answer</a> &gt; user_answers={}, float points_scored={0})</td></tr>
+<tr class="memitem:a086b795df427d1b09abb14b774495342"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnswered__question.html#a086b795df427d1b09abb14b774495342">Answered_question</a> (const <a class="el" href="classQuestion.html">Question</a> &amp;question, std::vector&lt; <a class="el" href="classSaved__answer.html">Saved_answer</a> &gt; <a class="el" href="classAnswered__question.html#af5917f070dfa93ee99e1caba6b3c6e62">user_answers</a>={}, float <a class="el" href="classAnswered__question.html#a2e5b9843c475b40004d8b247f7d9d649">points_scored</a>={0})</td></tr>
 <tr class="memdesc:a086b795df427d1b09abb14b774495342"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classAnswered__question.html" title="Class Answered_question is derrived from class Question, extended by a container of user&#39;s answers to...">Answered_question</a> object.  <a href="classAnswered__question.html#a086b795df427d1b09abb14b774495342">More...</a><br /></td></tr>
 <tr class="separator:a086b795df427d1b09abb14b774495342"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69ed264a0ab0bc0e6f59cd4f0b6486ff"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="classSaved__answer.html">Saved_answer</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnswered__question.html#a69ed264a0ab0bc0e6f59cd4f0b6486ff">get_users_answers</a> () const</td></tr>
@@ -140,6 +141,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2e4d1b5df360b94f9dfb58c811eb243a inherit pub_methods_classQuestion"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuestion.html#a2e4d1b5df360b94f9dfb58c811eb243a">add_answer</a> (const std::string &amp;<a class="el" href="classQuestion.html#a74c9df52f7df8e5386a79e93419105e8">text</a>, bool is_correct)</td></tr>
 <tr class="memdesc:a2e4d1b5df360b94f9dfb58c811eb243a inherit pub_methods_classQuestion"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an answer to the container Pushes an <a class="el" href="classAnswer.html" title="Class Answer corresponds to an answer for a multiple-choice question. Each answer has it&#39;s content an...">Answer</a> object to the container, increases correct answers' counter if correct.  <a href="classQuestion.html#a2e4d1b5df360b94f9dfb58c811eb243a">More...</a><br /></td></tr>
 <tr class="separator:a2e4d1b5df360b94f9dfb58c811eb243a inherit pub_methods_classQuestion"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:af5917f070dfa93ee99e1caba6b3c6e62"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classSaved__answer.html">Saved_answer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnswered__question.html#af5917f070dfa93ee99e1caba6b3c6e62">user_answers</a></td></tr>
+<tr class="separator:af5917f070dfa93ee99e1caba6b3c6e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e5b9843c475b40004d8b247f7d9d649"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnswered__question.html#a2e5b9843c475b40004d8b247f7d9d649">points_scored</a> {0.f}</td></tr>
+<tr class="separator:a2e5b9843c475b40004d8b247f7d9d649"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -361,6 +369,52 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Get the user's answers. </p>
 <dl class="section return"><dt>Returns</dt><dd>const std::vector&lt;Saved_answer&gt;&amp; </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a2e5b9843c475b40004d8b247f7d9d649"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e5b9843c475b40004d8b247f7d9d649">&#9670;&nbsp;</a></span>points_scored</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Answered_question::points_scored {0.f}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af5917f070dfa93ee99e1caba6b3c6e62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5917f070dfa93ee99e1caba6b3c6e62">&#9670;&nbsp;</a></span>user_answers</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classSaved__answer.html">Saved_answer</a>&gt; Answered_question::user_answers</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Container with user's answers </p>
 
 </div>
 </div>

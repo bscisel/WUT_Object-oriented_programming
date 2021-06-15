@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['open_5ffile_78',['open_file',['../classDatabase.html#a068f46e08ef03744f1cdc43f52f66a0d',1,'Database::open_file()'],['../classDatabase__users.html#adc8a8c9e116a23dc69d386fc78062936',1,'Database_users::open_file()']]]
+  ['main_92',['main',['../main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main.cpp']]],
+  ['main_2ecpp_93',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['mainwindow_94',['MainWindow',['../classMainWindow.html',1,'MainWindow'],['../classMainWindow.html#a996c5a2b6f77944776856f08ec30858d',1,'MainWindow::MainWindow()']]],
+  ['mainwindow_2ecpp_95',['mainwindow.cpp',['../mainwindow_8cpp.html',1,'']]],
+  ['mainwindow_2eh_96',['mainwindow.h',['../mainwindow_8h.html',1,'']]]
 ];

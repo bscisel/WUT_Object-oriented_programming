@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['json_71',['json',['../database_8hpp.html#ab701e3ac61a85b337ec5c1abaad6742d',1,'json():&#160;database.hpp'],['../database__users_8hpp.html#ab701e3ac61a85b337ec5c1abaad6742d',1,'json():&#160;database_users.hpp']]]
+  ['is_5fcorrect_89',['is_correct',['../classAnswer.html#ac335eff98928a8a07f866e6cfb85cd35',1,'Answer']]]
 ];

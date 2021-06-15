@@ -63,6 +63,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classUser-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">User Class Reference</div>  </div>
@@ -76,7 +78,7 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a04ec995689043c80c1cf76dd669669a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUser.html#a04ec995689043c80c1cf76dd669669a4">User</a> (std::string name, float points={0.f}, std::vector&lt; <a class="el" href="classSession.html">Session</a> * &gt; user_sessions={})</td></tr>
+<tr class="memitem:a04ec995689043c80c1cf76dd669669a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUser.html#a04ec995689043c80c1cf76dd669669a4">User</a> (std::string <a class="el" href="classUser.html#a085d8d69282b6298964eab8351584536">name</a>, float <a class="el" href="classUser.html#abdfd2a167432a13df37376cb0b5317b1">points</a>={0.f}, std::vector&lt; <a class="el" href="classSession.html">Session</a> * &gt; <a class="el" href="classUser.html#ae78e6464297686fc8cc48f6645958b33">user_sessions</a>={})</td></tr>
 <tr class="memdesc:a04ec995689043c80c1cf76dd669669a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classUser.html" title="Class User describesc the player&#39;s profile, stores his previous games and the total amount of points ...">User</a> object When saved data uploaded from file, previous sessions and points scored are loaded. Empty or zero otherwise. <a class="el" href="classUser.html" title="Class User describesc the player&#39;s profile, stores his previous games and the total amount of points ...">User</a> id assigned according to current number of users in the game.  <a href="classUser.html#a04ec995689043c80c1cf76dd669669a4">More...</a><br /></td></tr>
 <tr class="separator:a04ec995689043c80c1cf76dd669669a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac00b72ad64eb4149f7b21b9f5468c2b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUser.html#ac00b72ad64eb4149f7b21b9f5468c2b2">~User</a> ()</td></tr>
@@ -100,6 +102,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abdda7b263ac42656d71d2cc7566d1033"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="classSession.html">Session</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUser.html#abdda7b263ac42656d71d2cc7566d1033">get_user_sessions</a> () const</td></tr>
 <tr class="memdesc:abdda7b263ac42656d71d2cc7566d1033"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all user's sessions.  <a href="classUser.html#abdda7b263ac42656d71d2cc7566d1033">More...</a><br /></td></tr>
 <tr class="separator:abdda7b263ac42656d71d2cc7566d1033"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a6e2df27ebb47cea034c84d1669ccc633"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUser.html#a6e2df27ebb47cea034c84d1669ccc633">user_id</a></td></tr>
+<tr class="separator:a6e2df27ebb47cea034c84d1669ccc633"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a085d8d69282b6298964eab8351584536"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUser.html#a085d8d69282b6298964eab8351584536">name</a></td></tr>
+<tr class="separator:a085d8d69282b6298964eab8351584536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdfd2a167432a13df37376cb0b5317b1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUser.html#abdfd2a167432a13df37376cb0b5317b1">points</a></td></tr>
+<tr class="separator:abdfd2a167432a13df37376cb0b5317b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae78e6464297686fc8cc48f6645958b33"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classSession.html">Session</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUser.html#ae78e6464297686fc8cc48f6645958b33">user_sessions</a></td></tr>
+<tr class="separator:ae78e6464297686fc8cc48f6645958b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a6ff1d1a7793a3c6b1fea1ce2d0f7e0af"><td class="memItemLeft" align="right" valign="top">static unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUser.html#a6ff1d1a7793a3c6b1fea1ce2d0f7e0af">user_counter</a> {0}</td></tr>
+<tr class="separator:a6ff1d1a7793a3c6b1fea1ce2d0f7e0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class <a class="el" href="classUser.html" title="Class User describesc the player&#39;s profile, stores his previous games and the total amount of points ...">User</a> describesc the player's profile, stores his previous games and the total amount of points scored. </p>
@@ -345,6 +363,122 @@ Public Member Functions</h2></td></tr>
 
 <p>Get all user's sessions. </p>
 <dl class="section return"><dt>Returns</dt><dd>const std::vector&lt;Session *&gt;&amp; </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a085d8d69282b6298964eab8351584536"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a085d8d69282b6298964eab8351584536">&#9670;&nbsp;</a></span>name</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string User::name</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><a class="el" href="classUser.html" title="Class User describesc the player&#39;s profile, stores his previous games and the total amount of points ...">User</a>'s name </p>
+
+</div>
+</div>
+<a id="abdfd2a167432a13df37376cb0b5317b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdfd2a167432a13df37376cb0b5317b1">&#9670;&nbsp;</a></span>points</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float User::points</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Total points scored </p>
+
+</div>
+</div>
+<a id="a6ff1d1a7793a3c6b1fea1ce2d0f7e0af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ff1d1a7793a3c6b1fea1ce2d0f7e0af">&#9670;&nbsp;</a></span>user_counter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short User::user_counter {0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Users counter -&gt; used to assign unique id to new players starting from 1 </p>
+
+</div>
+</div>
+<a id="a6e2df27ebb47cea034c84d1669ccc633"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e2df27ebb47cea034c84d1669ccc633">&#9670;&nbsp;</a></span>user_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short User::user_id</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Unique user identification number </p>
+
+</div>
+</div>
+<a id="ae78e6464297686fc8cc48f6645958b33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae78e6464297686fc8cc48f6645958b33">&#9670;&nbsp;</a></span>user_sessions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classSession.html">Session</a> *&gt; User::user_sessions</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Stored user's sessions </p>
 
 </div>
 </div>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['text_225',['text',['../classAnswer.html#a0169336d2733760ee21c0b6f1551236f',1,'Answer::text()'],['../classQuestion.html#a74c9df52f7df8e5386a79e93419105e8',1,'Question::text()']]]
+  ['file_5fname_339',['file_name',['../classDatabase.html#ac5fb0b3f8a92da93442a7a5de2204720',1,'Database::file_name()'],['../classDatabase__users.html#ab437633592557135e8e99896f4f2f2cf',1,'Database_users::file_name()']]]
 ];

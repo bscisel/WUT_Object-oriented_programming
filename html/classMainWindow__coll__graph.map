@@ -1,4 +1,7 @@
 <map id="MainWindow" name="MainWindow">
-<area shape="rect" id="node1" title=" " alt="" coords="10,80,117,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="194,95,301,121"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,5,121,32"/>
+<area shape="rect" id="node3" href="$classSession.html" title="Class Session represents user&#39;s session of the game. Session&#39;s total time, session&#39;s start time,..." alt="" coords="146,5,218,32"/>
+<area shape="rect" id="node4" href="$classDatabase__users.html" title="class Database_user stores data of the users Allows to upload users&#39; data each time when the game is ..." alt="" coords="251,5,377,32"/>
+<area shape="rect" id="node5" href="$classDatabase.html" title="Class Database Upload and save categories with questions and their answers." alt="" coords="409,5,493,32"/>
 </map>

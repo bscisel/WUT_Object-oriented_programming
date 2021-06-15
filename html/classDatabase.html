@@ -63,6 +63,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classDatabase-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Database Class Reference</div>  </div>
@@ -76,7 +77,7 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aeb94aec003220e08c125fa0106daf345"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabase.html#aeb94aec003220e08c125fa0106daf345">Database</a> (const std::string &amp;file_name={})</td></tr>
+<tr class="memitem:aeb94aec003220e08c125fa0106daf345"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabase.html#aeb94aec003220e08c125fa0106daf345">Database</a> (const std::string &amp;<a class="el" href="classDatabase.html#ac5fb0b3f8a92da93442a7a5de2204720">file_name</a>={})</td></tr>
 <tr class="memdesc:aeb94aec003220e08c125fa0106daf345"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classDatabase.html" title="Class Database Upload and save categories with questions and their answers.">Database</a> object.  <a href="classDatabase.html#aeb94aec003220e08c125fa0106daf345">More...</a><br /></td></tr>
 <tr class="separator:aeb94aec003220e08c125fa0106daf345"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a068f46e08ef03744f1cdc43f52f66a0d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabase.html#a068f46e08ef03744f1cdc43f52f66a0d">open_file</a> (std::string f_name={})</td></tr>
@@ -103,6 +104,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9d2f3bca6181b15c1ffe56a12d790e36"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabase.html#a9d2f3bca6181b15c1ffe56a12d790e36">get_questions_number</a> () const</td></tr>
 <tr class="memdesc:a9d2f3bca6181b15c1ffe56a12d790e36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of questions in the database.  <a href="classDatabase.html#a9d2f3bca6181b15c1ffe56a12d790e36">More...</a><br /></td></tr>
 <tr class="separator:a9d2f3bca6181b15c1ffe56a12d790e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ac5fb0b3f8a92da93442a7a5de2204720"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabase.html#ac5fb0b3f8a92da93442a7a5de2204720">file_name</a></td></tr>
+<tr class="separator:ac5fb0b3f8a92da93442a7a5de2204720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8af571966b43605971f46045a082f4b1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classCategory.html">Category</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabase.html#a8af571966b43605971f46045a082f4b1">categories</a></td></tr>
+<tr class="separator:a8af571966b43605971f46045a082f4b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8c0a43802b60f62a0c0cb6898e41931"><td class="memItemLeft" align="right" valign="top"><a class="el" href="database_8hpp.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabase.html#ae8c0a43802b60f62a0c0cb6898e41931">data</a></td></tr>
+<tr class="separator:ae8c0a43802b60f62a0c0cb6898e41931"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class <a class="el" href="classDatabase.html" title="Class Database Upload and save categories with questions and their answers.">Database</a> Upload and save categories with questions and their answers. </p>
@@ -361,6 +371,76 @@ false </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>true </dd>
 <dd>
 false </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a8af571966b43605971f46045a082f4b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8af571966b43605971f46045a082f4b1">&#9670;&nbsp;</a></span>categories</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::shared_ptr&lt;<a class="el" href="classCategory.html">Category</a>&gt; &gt; Database::categories</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Container with pointers to the categories </p>
+
+</div>
+</div>
+<a id="ae8c0a43802b60f62a0c0cb6898e41931"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8c0a43802b60f62a0c0cb6898e41931">&#9670;&nbsp;</a></span>data</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="database_8hpp.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> Database::data</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>json instance to load and save databse </p>
+
+</div>
+</div>
+<a id="ac5fb0b3f8a92da93442a7a5de2204720"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5fb0b3f8a92da93442a7a5de2204720">&#9670;&nbsp;</a></span>file_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Database::file_name</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Name of the file of the database </p>
 
 </div>
 </div>

@@ -63,6 +63,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classDatabase__users-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Database_users Class Reference</div>  </div>
@@ -76,7 +77,7 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:add4c77015e75e9a55ef8b6437e3b0fc0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabase__users.html#add4c77015e75e9a55ef8b6437e3b0fc0">Database_users</a> (const std::string &amp;file_name={})</td></tr>
+<tr class="memitem:add4c77015e75e9a55ef8b6437e3b0fc0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabase__users.html#add4c77015e75e9a55ef8b6437e3b0fc0">Database_users</a> (const std::string &amp;<a class="el" href="classDatabase__users.html#ab437633592557135e8e99896f4f2f2cf">file_name</a>={})</td></tr>
 <tr class="memdesc:add4c77015e75e9a55ef8b6437e3b0fc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classDatabase__users.html" title="class Database_user stores data of the users Allows to upload users&#39; data each time when the game is ...">Database_users</a> object.  <a href="classDatabase__users.html#add4c77015e75e9a55ef8b6437e3b0fc0">More...</a><br /></td></tr>
 <tr class="separator:add4c77015e75e9a55ef8b6437e3b0fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc8a8c9e116a23dc69d386fc78062936"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabase__users.html#adc8a8c9e116a23dc69d386fc78062936">open_file</a> (std::string f_name={})</td></tr>
@@ -100,6 +101,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa5592b70fc66d54d1d015d418de692f4"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabase__users.html#aa5592b70fc66d54d1d015d418de692f4">get_users_number</a> () const</td></tr>
 <tr class="memdesc:aa5592b70fc66d54d1d015d418de692f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of users in the database.  <a href="classDatabase__users.html#aa5592b70fc66d54d1d015d418de692f4">More...</a><br /></td></tr>
 <tr class="separator:aa5592b70fc66d54d1d015d418de692f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ab437633592557135e8e99896f4f2f2cf"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabase__users.html#ab437633592557135e8e99896f4f2f2cf">file_name</a></td></tr>
+<tr class="separator:ab437633592557135e8e99896f4f2f2cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affcf86f1586cf1856ebd2c16403df376"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classUser.html">User</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabase__users.html#affcf86f1586cf1856ebd2c16403df376">users</a></td></tr>
+<tr class="separator:affcf86f1586cf1856ebd2c16403df376"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71f4985d8e845c4c9790ddf67916e857"><td class="memItemLeft" align="right" valign="top"><a class="el" href="database_8hpp.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabase__users.html#a71f4985d8e845c4c9790ddf67916e857">data</a></td></tr>
+<tr class="separator:a71f4985d8e845c4c9790ddf67916e857"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>class Database_user stores data of the users Allows to upload users' data each time when the game is open and saves the new data at the end of it </p>
@@ -327,6 +337,75 @@ false </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>true </dd>
 <dd>
 false </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a71f4985d8e845c4c9790ddf67916e857"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71f4985d8e845c4c9790ddf67916e857">&#9670;&nbsp;</a></span>data</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="database_8hpp.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> Database_users::data</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab437633592557135e8e99896f4f2f2cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab437633592557135e8e99896f4f2f2cf">&#9670;&nbsp;</a></span>file_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Database_users::file_name</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Name of the file with users' data </p>
+
+</div>
+</div>
+<a id="affcf86f1586cf1856ebd2c16403df376"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affcf86f1586cf1856ebd2c16403df376">&#9670;&nbsp;</a></span>users</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::shared_ptr&lt;<a class="el" href="classUser.html">User</a>&gt; &gt; Database_users::users</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Container with pointers to the <a class="el" href="classUser.html" title="Class User describesc the player&#39;s profile, stores his previous games and the total amount of points ...">User</a> objects </p>
 
 </div>
 </div>

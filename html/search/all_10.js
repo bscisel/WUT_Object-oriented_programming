@@ -1,12 +1,6 @@
 var searchData=
 [
-  ['_7eaddcategorydialog_98',['~AddCategoryDialog',['../classAddCategoryDialog.html#a859720a8d73a78646a6b84d121ba9dcb',1,'AddCategoryDialog']]],
-  ['_7eaddquestiondialog_99',['~AddQuestionDialog',['../classAddQuestionDialog.html#a93789d317f37126bdf90b16f3e986344',1,'AddQuestionDialog']]],
-  ['_7eadduserdialog_100',['~AddUserDialog',['../classAddUserDialog.html#a09c14c5f6c6fbd0638e7778dd6a1bc1b',1,'AddUserDialog']]],
-  ['_7eanswered_5fquestion_101',['~Answered_question',['../classAnswered__question.html#ae2c79c746346f88212fc7aae55c51875',1,'Answered_question']]],
-  ['_7ecategory_102',['~Category',['../classCategory.html#aaa98d8419b1d26679a01713ac8fe58dc',1,'Category']]],
-  ['_7emainwindow_103',['~MainWindow',['../classMainWindow.html#ae98d00a93bc118200eeef9f9bba1dba7',1,'MainWindow']]],
-  ['_7equestion_104',['~Question',['../classQuestion.html#a49ecc96971db8b506f00ca34a0503949',1,'Question']]],
-  ['_7esession_105',['~Session',['../classSession.html#a8753bb9dee966b7d39abc9b7237cd665',1,'Session']]],
-  ['_7euser_106',['~User',['../classUser.html#ac00b72ad64eb4149f7b21b9f5468c2b2',1,'User']]]
+  ['text_149',['text',['../classAnswer.html#a0169336d2733760ee21c0b6f1551236f',1,'Answer::text()'],['../classQuestion.html#a74c9df52f7df8e5386a79e93419105e8',1,'Question::text()']]],
+  ['time_150',['time',['../session_8cpp.html#ad5e3ede18b538467768413ea1b9832fe',1,'session.cpp']]],
+  ['to_5fjson_151',['to_json',['../database_8cpp.html#a46e1d9e79ddac526b53a957ebc50d631',1,'to_json(json &amp;j, const Answer &amp;answer):&#160;database.cpp'],['../database_8cpp.html#a5d8dee77839c69baa4d45e843e366d56',1,'to_json(json &amp;j, const Question *question):&#160;database.cpp'],['../database_8cpp.html#a7fd79b4fd4358b60951089a0e1a17aa6',1,'to_json(json &amp;j, const std::shared_ptr&lt; Category &gt; &amp;cat):&#160;database.cpp'],['../database_8cpp.html#a56d0b821f7b6371666fae4769260118a',1,'to_json(json &amp;j, const Database &amp;base):&#160;database.cpp'],['../database__users_8cpp.html#a6d7648d522f1e137ea5d14a02e30b204',1,'to_json(json &amp;j, const Saved_answer &amp;saved_answer):&#160;database_users.cpp'],['../database__users_8cpp.html#ac6d3a004356497a90a63489f8f09855c',1,'to_json(json &amp;j, const Answered_question &amp;a_question):&#160;database_users.cpp'],['../database__users_8cpp.html#a5457e733a8e855575757266dc5450729',1,'to_json(json &amp;j, const Session *session):&#160;database_users.cpp'],['../database__users_8cpp.html#a621ce9f54bcc9b2dc9b95d5484651c4f',1,'to_json(json &amp;j, const std::shared_ptr&lt; User &gt; &amp;user):&#160;database_users.cpp'],['../database__users_8cpp.html#a1ac9e7bae96f2377be7dc12af5d99245',1,'to_json(json &amp;j, const Database_users &amp;base):&#160;database_users.cpp']]]
 ];

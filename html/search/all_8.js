@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['next_5fquestion_5fexist_77',['next_question_exist',['../classSession.html#ad4ea0c0b71c95f059813f2a4a3aab7a4',1,'Session']]]
+  ['load_5fusers_5finto_5fwidgetlist_91',['load_users_into_widgetlist',['../classMainWindow.html#a29a2846676db2dfab304e1b6f5607c33',1,'MainWindow']]]
 ];

@@ -1,6 +1,28 @@
 var searchData=
 [
-  ['question_81',['Question',['../classQuestion.html',1,'Question'],['../classQuestion.html#ab123bd04a1bc523172d415ece2ffcbed',1,'Question::Question()=default'],['../classQuestion.html#ad192ed87eaa443bc54d72f452342b428',1,'Question::Question(const Question &amp;)=default'],['../classQuestion.html#aba253d6a7c0c4abe4b21a3c12241d596',1,'Question::Question(unsigned short points, const std::string &amp;text, unsigned short correct_count={0})']]],
-  ['question_2ecpp_82',['question.cpp',['../question_8cpp.html',1,'']]],
-  ['question_2ehpp_83',['question.hpp',['../question_8hpp.html',1,'']]]
+  ['on_5faddcategorybutton_5fclicked_99',['on_addCategoryButton_clicked',['../classMainWindow.html#a805acb7724d8784f5dac0c58580eb9f8',1,'MainWindow']]],
+  ['on_5faddquestionbutton_5fclicked_100',['on_addQuestionButton_clicked',['../classMainWindow.html#ac14941ff67f250b48221e371f33802a1',1,'MainWindow']]],
+  ['on_5fadduserbutton_5fclicked_101',['on_addUserButton_clicked',['../classMainWindow.html#adf720b88b974e34f1c28857c454965f7',1,'MainWindow']]],
+  ['on_5fbackbutton_5fclicked_102',['on_backButton_clicked',['../classMainWindow.html#a2dbe79cf6ee322a7d0c6fea43d3df45c',1,'MainWindow']]],
+  ['on_5fbacktomainmenubutton_5fclicked_103',['on_backToMainMenuButton_clicked',['../classMainWindow.html#ab228e82faadbadf4d7f86f7775089230',1,'MainWindow']]],
+  ['on_5fbuttonbox_5faccepted_104',['on_buttonBox_accepted',['../classAddCategoryDialog.html#a383722ca036e5056ecda1bf95f96dd09',1,'AddCategoryDialog::on_buttonBox_accepted()'],['../classAddQuestionDialog.html#a613ae3b1a5aac3fa849dfb6839730880',1,'AddQuestionDialog::on_buttonBox_accepted()'],['../classAddUserDialog.html#ac495e7572c1403d03e7a6712dcbc39be',1,'AddUserDialog::on_buttonBox_accepted()']]],
+  ['on_5fbuttonbox_5frejected_105',['on_buttonBox_rejected',['../classAddCategoryDialog.html#ad3c1fa4b02474a739903df237d03a6db',1,'AddCategoryDialog::on_buttonBox_rejected()'],['../classAddQuestionDialog.html#a08fd188846e7a2a1eb199fb3b8d99959',1,'AddQuestionDialog::on_buttonBox_rejected()'],['../classAddUserDialog.html#a95805f77a501be00c70d10a483f7b399',1,'AddUserDialog::on_buttonBox_rejected()']]],
+  ['on_5fcancelbutton_5fclicked_106',['on_cancelButton_clicked',['../classMainWindow.html#a1958c8764c6abfe474d5a29789e661f8',1,'MainWindow']]],
+  ['on_5fcategorieslistwidget_5fitemselectionchanged_107',['on_categoriesListWidget_itemSelectionChanged',['../classMainWindow.html#ac41ffee5b4037d54076ddfce607370a6',1,'MainWindow']]],
+  ['on_5fexitbutton_5f2_5fclicked_108',['on_exitButton_2_clicked',['../classMainWindow.html#ada891ea2fb41e0eb4ace34a28b6b4209',1,'MainWindow']]],
+  ['on_5fexitbutton_5fclicked_109',['on_exitButton_clicked',['../classMainWindow.html#afcbbbc80001065310d2cd6221c5be55c',1,'MainWindow']]],
+  ['on_5fgotostatisticsbutton_5fclicked_110',['on_goToStatisticsButton_clicked',['../classMainWindow.html#a659dfc632c6572b8a1c08ff77679ab0b',1,'MainWindow']]],
+  ['on_5fnewgamebutton_5fclicked_111',['on_newGameButton_clicked',['../classMainWindow.html#a2428abfc1959ff6fa036732c5a2a1dbe',1,'MainWindow']]],
+  ['on_5fnextquestionbutton_5fclicked_112',['on_nextQuestionButton_clicked',['../classMainWindow.html#a86797b18616de9a2fbc7b75bd66ae306',1,'MainWindow']]],
+  ['on_5fopenfilebutton_5fclicked_113',['on_openFileButton_clicked',['../classMainWindow.html#a201e48d05c838d5114a7b8ce31dc2840',1,'MainWindow']]],
+  ['on_5fquestionslistwidget_5fitemclicked_114',['on_questionsListWidget_itemClicked',['../classMainWindow.html#a5fab3ac84797b0a96d5abc2946b30eb9',1,'MainWindow']]],
+  ['on_5fsavetofilebutton_5fclicked_115',['on_saveToFileButton_clicked',['../classMainWindow.html#a8bc6f7e8107583e08962399c126c204a',1,'MainWindow']]],
+  ['on_5fselectuserbutton_5fclicked_116',['on_selectUserButton_clicked',['../classMainWindow.html#afc7afb7a504d3dfe077dc97826401670',1,'MainWindow']]],
+  ['on_5fsessionresultswidget_5fitemselectionchanged_117',['on_sessionResultsWidget_itemSelectionChanged',['../classMainWindow.html#a6adf2feac896838947e22201399db508',1,'MainWindow']]],
+  ['on_5fshowbutton_5fclicked_118',['on_showButton_clicked',['../classMainWindow.html#aa2e1465652da4dbd80b65ff6dc4cfead',1,'MainWindow']]],
+  ['on_5fstartbutton_5fclicked_119',['on_startButton_clicked',['../classMainWindow.html#abcc096120205197b50fa55cb603acb95',1,'MainWindow']]],
+  ['on_5fstatisticsbutton_5fclicked_120',['on_statisticsButton_clicked',['../classMainWindow.html#ada4e57dfed864feb3141ccc39283e16a',1,'MainWindow']]],
+  ['on_5fuserslistwidget_5fitemdoubleclicked_121',['on_usersListWidget_itemDoubleClicked',['../classMainWindow.html#ab99c4be0a90c1b78c26f05b8545491f3',1,'MainWindow']]],
+  ['on_5fuserslistwidget_5fitemselectionchanged_122',['on_usersListWidget_itemSelectionChanged',['../classMainWindow.html#a5ad0129072c2caead0c8ac46d92c1c1f',1,'MainWindow']]],
+  ['open_5ffile_123',['open_file',['../classDatabase.html#a068f46e08ef03744f1cdc43f52f66a0d',1,'Database::open_file()'],['../classDatabase__users.html#adc8a8c9e116a23dc69d386fc78062936',1,'Database_users::open_file()']]]
 ];
