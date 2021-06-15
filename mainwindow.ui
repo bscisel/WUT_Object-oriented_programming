@@ -34,7 +34,8 @@
                </font>
               </property>
               <property name="text">
-               <string>Siema
+               <string>Select a user and start a new game.
+You can also view user previous games.
 </string>
               </property>
               <property name="wordWrap">
