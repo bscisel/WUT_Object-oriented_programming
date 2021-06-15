@@ -1,0 +1,162 @@
+{
+    "users": [
+        {
+            "name": "Natalia",
+            "points": 5.0,
+            "user_sessions": [
+                {
+                    "points_scored": 5.0,
+                    "points_to_score": 9,
+                    "questions": [
+                        {
+                            "correct_count": 2,
+                            "points": 2,
+                            "points_scored": 2.0,
+                            "text": "Choose all correct answers. Bulgaria borders with:",
+                            "user_answers": [
+                                {
+                                    "correct": true,
+                                    "text": "Turkey",
+                                    "user_answer": true
+                                },
+                                {
+                                    "correct": false,
+                                    "text": "Ukraine",
+                                    "user_answer": false
+                                },
+                                {
+                                    "correct": false,
+                                    "text": "Slovakia",
+                                    "user_answer": false
+                                },
+                                {
+                                    "correct": true,
+                                    "text": "Greece",
+                                    "user_answer": true
+                                }
+                            ]
+                        },
+                        {
+                            "correct_count": 2,
+                            "points": 2,
+                            "points_scored": 0.25,
+                            "text": "Choose all correct answers. Indonesia borders with:",
+                            "user_answers": [
+                                {
+                                    "correct": false,
+                                    "text": "Vietnam",
+                                    "user_answer": true
+                                },
+                                {
+                                    "correct": false,
+                                    "text": "Laos",
+                                    "user_answer": true
+                                },
+                                {
+                                    "correct": true,
+                                    "text": "Malaysia",
+                                    "user_answer": true
+                                },
+                                {
+                                    "correct": true,
+                                    "text": "Papua New Guinea",
+                                    "user_answer": false
+                                }
+                            ]
+                        },
+                        {
+                            "correct_count": 4,
+                            "points": 1,
+                            "points_scored": 0.75,
+                            "text": "Choose all correct answers. China borders with:",
+                            "user_answers": [
+                                {
+                                    "correct": true,
+                                    "text": "Myanmar",
+                                    "user_answer": false
+                                },
+                                {
+                                    "correct": true,
+                                    "text": "Russia",
+                                    "user_answer": true
+                                },
+                                {
+                                    "correct": true,
+                                    "text": "India",
+                                    "user_answer": true
+                                },
+                                {
+                                    "correct": true,
+                                    "text": "Mongolia",
+                                    "user_answer": true
+                                }
+                            ]
+                        },
+                        {
+                            "correct_count": 3,
+                            "points": 3,
+                            "points_scored": 1.0,
+                            "text": "Choose all correct answers. Azerbaijan borders with:",
+                            "user_answers": [
+                                {
+                                    "correct": true,
+                                    "text": "Armenia",
+                                    "user_answer": true
+                                },
+                                {
+                                    "correct": true,
+                                    "text": "Iran",
+                                    "user_answer": false
+                                },
+                                {
+                                    "correct": false,
+                                    "text": "Kazakhstan",
+                                    "user_answer": true
+                                },
+                                {
+                                    "correct": true,
+                                    "text": "Georgia",
+                                    "user_answer": true
+                                }
+                            ]
+                        },
+                        {
+                            "correct_count": 1,
+                            "points": 1,
+                            "points_scored": 1.0,
+                            "text": " Who had Ralf Schumacher collided with that upset him so much in the 1997 Luxembourg Grand Prix?",
+                            "user_answers": [
+                                {
+                                    "correct": false,
+                                    "text": "His team mate",
+                                    "user_answer": false
+                                },
+                                {
+                                    "correct": false,
+                                    "text": "A stray horse",
+                                    "user_answer": false
+                                },
+                                {
+                                    "correct": false,
+                                    "text": "A spectator",
+                                    "user_answer": false
+                                },
+                                {
+                                    "correct": true,
+                                    "text": "His brother",
+                                    "user_answer": true
+                                }
+                            ]
+                        }
+                    ],
+                    "selected_categories_names": [
+                        "Geography - borders",
+                        "Formula 1"
+                    ],
+                    "session_time": 26355,
+                    "start_time": 1623706238866
+                }
+            ]
+        }
+    ]
+}
