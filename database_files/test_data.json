@@ -1,0 +1,53 @@
+{
+    "categories": [
+        {
+            "name": "Kategoria jeden",
+            "questions": [
+                {
+                    "text": "Pytanie numer jeden?",
+                    "points": 3,
+                    "answers": [
+                        {
+                            "text": "Odpowiedz pierwsza",
+                            "is_correct": true
+                        },
+                        {
+                            "text": "Odpowiedz druga",
+                            "is_correct": false
+                        },
+                        {
+                            "text": "Odpowiedz trzecia",
+                            "is_correct": false
+                        },
+                        {
+                            "text": "Odpowiedz czwarta",
+                            "is_correct": false
+                        }
+                    ]
+                },
+                {
+                    "text": "Pytanie numer dwa?",
+                    "points": 3,
+                    "answers": [
+                        {
+                            "text": "Odpowiedz pierwsza",
+                            "is_correct": false
+                        },
+                        {
+                            "text": "Odpowiedz druga w drugim",
+                            "is_correct": false
+                        },
+                        {
+                            "text": "Odpowiedz trzecia",
+                            "is_correct": true
+                        },
+                        {
+                            "text": "Odpowiedz czwarta",
+                            "is_correct": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

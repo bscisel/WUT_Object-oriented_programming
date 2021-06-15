@@ -1,0 +1,31 @@
+{
+    "categories": [
+        {
+            "name": "Jakaś kategoria",
+            "questions": [
+                {
+                    "answers": [
+                        {
+                            "is_correct": false,
+                            "text": "A"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "B"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "C"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "D"
+                        }
+                    ],
+                    "points": 3,
+                    "text": "Pytanko?"
+                }
+            ]
+        }
+    ]
+}

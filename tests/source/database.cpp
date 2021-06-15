@@ -4,9 +4,9 @@
 TEST(database, create_database)
 {
     Database database;
-    database.open_file("data.json");
+    database.open_file("../../database_files/test_data.json");
     database.read_data();
-    EXPECT_EQ(database.get_file_name(), "data.json");
+    EXPECT_EQ(database.get_file_name(), "../../database_files/test_data.json");
     EXPECT_EQ(database.get_categories_number(), 1);
     auto categories = database.get_categories();
     EXPECT_EQ(categories[0]->get_questions()[0]->get_text(), "Pytanie numer jeden?");
@@ -18,7 +18,7 @@ TEST(database, create_database)
 TEST(database, add_category)
 {
     Database database;
-    database.open_file("data.json");
+    database.open_file("../../database_files/test_data.json");
     database.read_data();
     EXPECT_EQ(database.get_categories_number(), 1);
     Question* question1 = new Question(2, "Question?");
