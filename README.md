@@ -19,3 +19,8 @@
 - [Qt5](https://www.qt.io/) - do graficznego interfejsu użytkownika
 - [GoogleTest](https://github.com/google/googletest) - do testów jednostkowych logiki aplikacji
 - [Doxygen](https://www.doxygen.nl/index.html) - dokumentacja kodu
+
+## Zrzuty ekranu
+
+![](./screenshots/1.png)
+![](./screenshots/2.png)
