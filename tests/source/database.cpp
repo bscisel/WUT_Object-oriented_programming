@@ -30,5 +30,3 @@ TEST(database, add_category)
     EXPECT_EQ(database.get_categories_number(), 2);
     EXPECT_EQ(database.get_questions_number(), 3);
 }
-
-

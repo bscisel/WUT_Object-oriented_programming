@@ -3,6 +3,7 @@
 
 #include "category.hpp"
 #include "question.hpp"
+#include "answered_question.hpp"
 #include <vector>
 #include <chrono>
 #include <iomanip>
