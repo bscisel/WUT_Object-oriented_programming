@@ -1,4 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classQuestion.html" title="class Question includes the text of the question, number of points to score, containers of Answers ob..." alt="" coords="5,5,85,32"/>
-<area shape="rect" id="node2" href="$classAnswered__question.html" title="Class Answered_question is derrived from class Question, extended by a container of user&#39;s answers to..." alt="" coords="133,5,283,32"/>
-</map>
